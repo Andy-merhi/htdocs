@@ -1,5 +1,6 @@
 *{
   font-weight: bold;  
+  font-family: 'Segoe UI';
 }
 .head {
     position: relative;
@@ -80,21 +81,10 @@
     background: transparent 0% 0% no-repeat padding-box;
   
 }
-
-.head {
-    position: relative;
-    width: 100%;;
-    height: 30px;
-    background-color: transparent; /* Ensures no black background */
-}
-.head ul{
-    display: flex;
-    list-style-type: none;
-}
 /* menu bar component */
 .menu{
     position: relative;
-    width: 1600px;
+    width: 1620px;
     height: 62px;
     background: transparent 0% 0% no-repeat padding-box;
     background-color: #F1F1F1;
@@ -198,4 +188,40 @@ p.menu-collection{
     width: 185px;
     height: 30px;
 }
-
+.first-block{
+    height: 837px;
+    width: 1600px;
+    margin-top: 8px;
+    position: relative;
+}
+.women-block p{
+    font-size: 63px; 
+    color: #FFFFFF; 
+    position: absolute;
+    margin-top: 406px;
+    margin-left: 165px;
+}
+.men-block p{
+    font-size: 63px; 
+    color: #FFFFFF; 
+    position: absolute;
+    margin-top: 406px;
+    margin-left: 734px;
+    width: 132px;
+    height: 84px;
+}
+.all-block p{
+    font-size: 63px; 
+    color: #FFFFFF; 
+    position: absolute;
+    margin-top: 406px;
+    margin-left: 1264px;
+    width: 134px;
+    height: 84px;
+}
+#New-In-Women{
+    margin-top: 147px;
+    margin-left: 638px;
+    height: 62px;
+    font-size: 46px;
+}
