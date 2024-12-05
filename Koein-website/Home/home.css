@@ -1,0 +1,201 @@
+*{
+  font-weight: bold;  
+}
+.head {
+    position: relative;
+    width: 100%;;
+    height: 30px;
+    background-color: transparent; /* Ensures no black background */
+}
+.head ul{
+    display: flex;
+    list-style-type: none;
+}
+
+.image-rectangle, .image-noun-shipping, .txt1, .noun-store-img
+, .p-stores, .p-stores, .p-newsLetter, .p-About, .p-contact, .p-giftCard{
+    position: absolute;
+    font-size: 13px;
+}
+.image-noun-shipping{
+    top: 10px;
+    left: 151px;
+    /* UI Properties */
+  
+}
+.txt1{
+    margin-top: 6px;
+    margin-left: 143px;
+    text-align: left;
+    background: transparent 0% 0% no-repeat padding-box;
+  
+}
+.noun-store-img{
+    margin: 9px auto auto 1051px;
+    width: 11px;
+    height: 11px;
+    background: transparent 0% 0% no-repeat padding-box;
+  
+}
+
+.p-stores{
+    margin-top: 6px;
+    margin-left: 1068px;
+    width: 47px;
+    height: 17px;
+    background: transparent 0% 0% no-repeat padding-box;
+  
+}
+.p-newsLetter{
+    margin-top: 6px;
+    margin-left: 1135px;
+    width: 82px;
+    height: 17px;
+    /* UI Properties */
+    background: transparent 0% 0% no-repeat padding-box;
+  
+}
+.p-About{
+    margin-top: 6px;
+    margin-left: 1239px;
+    width: 44px;
+    height: 17px;
+    background: transparent 0% 0% no-repeat padding-box;
+  
+}
+.p-contact{
+    margin-top: 6px;
+    margin-left: 1305px;
+    width: 59px;
+    height: 17px;
+    /* UI Properties */
+    background: transparent 0% 0% no-repeat padding-box;
+  
+}
+.p-giftCard{
+    margin-top: 6px;
+    margin-left: 1386px;
+    width: 63px;
+    height: 17px;
+    background: transparent 0% 0% no-repeat padding-box;
+  
+}
+
+.head {
+    position: relative;
+    width: 100%;;
+    height: 30px;
+    background-color: transparent; /* Ensures no black background */
+}
+.head ul{
+    display: flex;
+    list-style-type: none;
+}
+/* menu bar component */
+.menu{
+    position: relative;
+    width: 1600px;
+    height: 62px;
+    background: transparent 0% 0% no-repeat padding-box;
+    background-color: #F1F1F1;
+}
+.menu ul{
+    display: flex;
+    list-style-type: none;
+}
+.menu-new{
+    position: absolute;
+    margin-top: 21px;
+    margin-left: 151px;
+    width: 33px;
+    height: 19px;
+    font-size: 14px;
+    /* UI Properties */
+    background: transparent 0% 0% no-repeat padding-box;
+  
+}
+p.menu-men{
+    position: absolute;
+    margin: 21px;
+    margin-left: 216px;
+    width: 32px;
+    height: 19px;
+    font-size: 14px;
+    background: transparent 0% 0% no-repeat padding-box;
+  
+}
+p.menu-women{
+    position: absolute;
+    margin-top: 21px;
+    margin-left: 279px;
+    width: 57px;
+    height: 19px;
+    font-size: 14px;
+    background: transparent 0% 0% no-repeat padding-box;
+  
+}
+p.menu-collection{
+    position: absolute;
+    margin-top: 21px;
+    margin-left: 368px;
+    width: 92px;
+    height: 19px;
+    font-size: 14px;
+    /* UI Properties */
+    background: transparent 0% 0% no-repeat padding-box;
+  
+}
+.menu-div{
+    position: absolute;
+    background-color: #000000;
+    margin-top: 19px;
+    margin-left: 485px;
+    width: 57px;
+    height: 24px;
+}
+.menu-sale{
+    position: absolute;
+    color: #FFFFFF;
+    margin-top: 22px;
+    margin-left: 498px;
+    width: 32px;
+    height: 19px;
+    font-size: 14px;
+}
+.menu-grp3{
+    position: absolute;
+    margin-top: 15px;
+    margin-left: 767px;
+    width: 65px;
+    height: 32px;
+}
+.menu-bag{
+    position: absolute;
+    margin-top: 18px;
+    margin-left: 1123px;
+    width: 24px;
+    height: 25px;
+}
+.menu-profile{
+    position: absolute;
+    margin-top: 21px;
+    margin-left: 1171px;
+    width: 30px;
+    height: 19px;
+}
+.menu-heart{
+    position: absolute;
+    margin-top: 21.5px;
+    margin-left: 1220px;
+    width: 23px;
+    height: 20px;
+}
+.menu-search-div{
+    background-color: #FFFFFF;
+    position: absolute;
+    margin-top: 16px;
+    margin-left: 1264px;
+    width: 185px;
+    height: 30px;
+}
+
