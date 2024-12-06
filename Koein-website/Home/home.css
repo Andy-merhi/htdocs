@@ -315,3 +315,28 @@ p.menu-collection{
         font-size: 46px;
         margin: 47px 0px 0px 59px;
     }
+    .discover-product{
+        background-color: #000000;
+        display: flex;
+        width: 1298px;
+        height: 167px;
+        margin: 155px 0px 0px 151px;
+    }
+    .discover-product .txt1{
+        color: #FFFFFF;
+        font-size: 46px;
+        margin: 51px 0px 0px 60px;
+    }
+    .discover-product .txt2{
+        color: #FFFFFF;
+        font-size: 13px;
+        margin: 87px 0px 0px 464px;
+    }
+    .discover-product button{
+        background-color: #000000;
+        color: #FFFFFF;
+        border:#FFFFFF solid;
+        width: 235px;
+        height: 67px;
+        margin: 49px 0px 0px 451px;
+    }
