@@ -340,3 +340,42 @@ p.menu-collection{
         height: 67px;
         margin: 49px 0px 0px 451px;
     }
+    .joop-logo-txt{
+        position: absolute;
+        font-size: 46px; 
+        color: #FFFFFF; 
+        margin: 432px 0px 0px 501px;
+    }
+    .drykoon-container{
+        position: flex;
+        width: 1600px;
+        height: 548px;
+        margin-top: 102px;
+        background-color: #F5F5F5;
+    }
+    .drykoon-logo{
+        position: relative;
+    }
+    .drykoon-logo-pic{
+        position: absolute;
+        top: 157px;
+        left: 151px;
+        width: 197px;
+        height: 67px;
+    }
+    .drykoon-btn{
+        position: absolute;
+        width: 243px;
+        height: 67px;
+        padding: 23px 35px 23px 36px;
+        top: 323px;
+        left: 151px;
+        font-size: 16px;
+        border: solid;
+    }
+    .drykoon-pics{
+        width:888px ;
+        margin: 76px 0px 0px 561px;
+        display: flex;
+        padding: 76px;
+    }
