@@ -225,3 +225,17 @@ p.menu-collection{
     height: 62px;
     font-size: 46px;
 }
+.swiper {
+    width: 1600px;
+    height: 700px;
+  }
+  .swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+  }
+  .swiper-pagination-bullet{
+    background: black !important;
+  }
+  
