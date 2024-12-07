@@ -13,7 +13,7 @@ body{
     background-color: transparent; /* Ensures no black background */
 }
 .head ul{
-    display: flex;
+    /* display: flex; */
     list-style-type: none;
 }
 
@@ -39,8 +39,6 @@ body{
     margin: 9px auto auto 1051px;
     width: 11px;
     height: 11px;
-    background: transparent 0% 0% no-repeat padding-box;
-  
 }
 
 .p-stores{
@@ -48,42 +46,30 @@ body{
     margin-left: 1068px;
     width: 47px;
     height: 17px;
-    background: transparent 0% 0% no-repeat padding-box;
-  
 }
 .p-newsLetter{
     margin-top: 6px;
     margin-left: 1135px;
     width: 82px;
     height: 17px;
-    /* UI Properties */
-    background: transparent 0% 0% no-repeat padding-box;
-  
 }
 .p-About{
     margin-top: 6px;
     margin-left: 1239px;
     width: 44px;
     height: 17px;
-    background: transparent 0% 0% no-repeat padding-box;
-  
 }
 .p-contact{
     margin-top: 6px;
     margin-left: 1305px;
     width: 59px;
     height: 17px;
-    /* UI Properties */
-    background: transparent 0% 0% no-repeat padding-box;
-  
 }
 .p-giftCard{
     margin-top: 6px;
     margin-left: 1386px;
     width: 63px;
     height: 17px;
-    background: transparent 0% 0% no-repeat padding-box;
-  
 }
 /* menu bar component */
 .menu{
@@ -94,7 +80,7 @@ body{
     background-color: #F1F1F1;
 }
 .menu ul{
-    display: flex;
+    /* display: flex; */
     list-style-type: none;
 }
 .menu-new{
@@ -104,9 +90,6 @@ body{
     width: 33px;
     height: 19px;
     font-size: 14px;
-    /* UI Properties */
-    background: transparent 0% 0% no-repeat padding-box;
-  
 }
 p.menu-men{
     position: absolute;
@@ -115,8 +98,6 @@ p.menu-men{
     width: 32px;
     height: 19px;
     font-size: 14px;
-    background: transparent 0% 0% no-repeat padding-box;
-  
 }
 p.menu-women{
     position: absolute;
@@ -125,8 +106,6 @@ p.menu-women{
     width: 57px;
     height: 19px;
     font-size: 14px;
-    background: transparent 0% 0% no-repeat padding-box;
-  
 }
 p.menu-collection{
     position: absolute;
@@ -135,9 +114,6 @@ p.menu-collection{
     width: 92px;
     height: 19px;
     font-size: 14px;
-    /* UI Properties */
-    background: transparent 0% 0% no-repeat padding-box;
-  
 }
 .menu-div{
     position: absolute;
@@ -335,7 +311,7 @@ p.menu-collection{
     .discover-product button{
         background-color: #000000;
         color: #FFFFFF;
-        border:#FFFFFF solid;
+        border:1px #FFFFFF solid;
         width: 235px;
         height: 67px;
         margin: 49px 0px 0px 451px;
@@ -371,11 +347,156 @@ p.menu-collection{
         top: 323px;
         left: 151px;
         font-size: 16px;
-        border: solid;
+        border: 1px solid #000000;
+        cursor: pointer;
     }
     .drykoon-pics{
         width:888px ;
         margin: 76px 0px 0px 561px;
         display: flex;
-        padding: 76px;
+        padding-top: 76px;
     }
+    .drykorn-m{
+        margin-left: 4px;
+    }
+    .marccain-container{
+        display: flex;
+        margin-top: 134px;
+        margin-left: 152px;
+    }
+    .marccain-pic{
+        position: relative;
+        width: 917px;
+        height: 545px;
+    }
+    .marccain-logo2{
+        position: absolute;
+        margin: 242px 0px 0px 285px;
+    }
+    .shop-now{
+        background-color: #000000;
+        position: relative;
+        width: 381px;
+        height: 545px;
+    }
+    .shop-now-txt1{
+        font-size: 65px;
+        color: #FFFFFF;
+        margin: 168px 0px 0px 72px;
+    }
+    .shop-now-txt2{
+        font-size: 15px;
+        color: #FFFFFF;
+        margin: 1px 0px 0px 124px;
+    }
+    .marccain-shop-now-btn{
+        position: absolute;
+        margin: 97px 0px 0px 88px;
+        font-size: 16px;
+        width: 206px;
+        height: 67px;
+        background-color: black;
+        color: #FFFFFF;
+        border:1px #FFFFFF solid;
+        cursor: pointer;
+    }
+    .new-to-act-container{
+        margin-left: 151px;
+        width: 1298px;
+        height: 572px;
+        position: relative;
+        margin-top: 8px;
+    }
+    .new-to-act-txt1{
+        font-size: 46px;
+        margin: 174px 0px 0px 511.5px;
+        position: absolute;
+        color: #FFFFFF;
+    }
+    .new-to-act-txt2{
+        position: absolute;
+        margin: 244px 0px 0px 467.5px;
+        color: #FFFFFF;
+        font-size: 15px;
+    }
+    .act-register-btn{
+        position: absolute;
+        color: #FFFFFF;
+        border: 1px solid #FFFFFF ;
+        width: 204px;
+        height: 67px;
+        margin: 332px 0px 0px 547px;
+        font-size: 16px;
+        background-color: transparent;
+        cursor: pointer;
+    }
+    .browse-again-container{
+        margin: 9px 0px 0px 151px;
+        width: 1298px;
+        height: 418px;
+        background-color: #F5F5F5;
+    }
+    .browse-again-txt1{
+        position: absolute;
+        font-size: 16px;
+        margin: 60px 0px 0px 585px;
+    }
+    .browse-again-txt2{
+        position: absolute;
+        font-size: 46px;
+        margin: 81px 0px 0px 248px;
+    }
+    .categorie{
+        position: absolute;
+        width: 426px;
+        height: 153px;
+        margin: 222px 0px 0px 436px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .categorie button {
+        flex: 1 1 45%;      
+        text-align: center;        
+        border: 1px solid black;    
+        background-color: transparent; 
+        cursor: pointer;           
+        font-size: 16px;
+    }
+    .fast-del-logo{
+        margin: 169.5px 0px 0px 340.8px;
+        position: absolute;
+    }
+    .fast-del-logo img{
+        width: 59px;
+        height: 26px;
+    }
+    .qlt-logo{
+        margin: 165px 0px 0px 782px;
+        position: absolute;
+    }
+    .qlt-logo img{
+        width: 35px;
+        height: 35px;
+    }
+    .location-logo{
+        margin: 166.5px 0px 0px 1219px
+    }
+    .fast-logo-txt{
+        position: absolute;
+        font-size: 12px;
+        margin: 25.91px 0px 0px 325px ;
+    }
+    .qlt-logo-txt{
+        position: absolute;
+        font-size: 12px;
+        margin: 21.13px 0px 0px 739px;
+    }
+    .location-logo-txt{
+        font-size: 12px;
+        margin: 22px 0px 0px 1180px;
+    }
+    .pics{
+        margin: 23.5px 0px 0px 151px;
+        display: flex;
+    }
+ 
