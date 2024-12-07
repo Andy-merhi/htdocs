@@ -181,16 +181,16 @@ p.menu-collection{
     /* flex: 1;                      Allows input to take up remaining space */
     border: none;                 /* Removes default input border */
     outline: none;                /* Removes default focus outline */
-    font-size: 14px;              /* Font size of input text */
+    font-size: 14px;              
     padding: 5px 30px 6px 13.73px;        /* Inner padding (adjust right for icon) */
 }
 
 .menu-search-icon {
-    position: absolute;                /* Positioned inside the container */
+    position: absolute;                
     right: 10px;                        /* Keeps the icon inside the right edge */
-    width: 12.26px;                    /* Icon width */
-    height: 12.26px;                   /* Icon height */
-    cursor: pointer;                   /* Pointer cursor on hover */
+    width: 12.26px;                    
+    height: 12.26px;                   
+    cursor: pointer;                   
 }
 /* Placeholder text styling */
 .menu-search-input::placeholder {
@@ -211,6 +211,47 @@ p.menu-collection{
     position: absolute;
     margin-top: 406px;
     margin-left: 165px;
+}
+.women-on-hover{
+    display: none;
+}
+.women-on-hover .womenBlc-on-hover{
+    position: absolute;
+    margin-top: 378px;
+    margin-left: 228px;
+    width: 86px;
+    height: 113px;
+}
+.women-on-hover .women-on-hover-pic{
+    position: absolute;
+    display: none;
+    width: 522px; 
+    height: 837px; 
+    position: absolute;
+    margin-left: 10px;
+}
+.women-on-hover button{
+    position: absolute;
+    margin-top: 602px;
+    margin-left: 141px;
+    width: 235px;
+    height: 67px;
+    color: #FFFFFF;
+    border: 1px solid #FFFFFF;
+    cursor: pointer;
+    background-color: transparent;
+    font-size: 16px;
+}
+.hover-women-block:hover .women-blc1{
+    filter: brightness(0.5)
+}
+.women-block:hover p {
+    transition: ease-in-out 0.3s;
+    margin-top: 138px;
+}
+.women-block:hover .women-on-hover{
+    transition: ease-in-out 0.7s;
+    display:block;
 }
 .men-block p{
     font-size: 63px; 
@@ -278,13 +319,24 @@ p.menu-collection{
     height: 962px; 
     position: relative;
     }
-  .bigPic-container img{
+  .bigPic-container .big-container-pic1{
     position: absolute;
     }
   .bigPic-container p{
     font-size: 46px;
     position: absolute;
     color: #FFFFFF;
+    }
+   .big-container-icon{
+        position: absolute;
+        margin: 477px 0px 0px 691.42px;
+        display: none;
+    }
+    #big-container-hover:hover .big-container-pic1{
+        filter: brightness(0.5);
+    }
+    #big-container-hover:hover .big-container-icon{
+        display: block;
     }
     .marccain-logo{
         height: 146px; 
