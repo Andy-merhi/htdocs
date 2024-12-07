@@ -186,11 +186,11 @@ p.menu-collection{
 }
 
 .menu-search-icon {
-    position: absolute;                
-    margin-right: 10px;                       
-    width: 12.26px;                    
-    height: 12.26px;                   
-    cursor: pointer;                   
+    position: absolute;                /* Positioned inside the container */
+    right: 10px;                        /* Keeps the icon inside the right edge */
+    width: 12.26px;                    /* Icon width */
+    height: 12.26px;                   /* Icon height */
+    cursor: pointer;                   /* Pointer cursor on hover */
 }
 /* Placeholder text styling */
 .menu-search-input::placeholder {
