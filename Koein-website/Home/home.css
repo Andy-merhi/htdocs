@@ -16,6 +16,9 @@ body{
     /* display: flex; */
     list-style-type: none;
 }
+.head li{
+    cursor: pointer;
+}
 
 .image-noun-shipping, .txt1, .noun-store-img
 , .p-stores, .p-stores, .p-newsLetter, .p-About, .p-contact, .p-giftCard{
@@ -82,6 +85,9 @@ body{
 .menu ul{
     /* display: flex; */
     list-style-type: none;
+}
+.menu li{
+    cursor: pointer;
 }
 .menu-new{
     position: absolute;
@@ -160,14 +166,39 @@ p.menu-collection{
     width: 23px;
     height: 20px;
 }
-.menu-search-div{
-    background-color: #FFFFFF;
-    position: absolute;
-    margin-top: 16px;
-    margin-left: 1264px;
-    width: 185px;
+.menu-search-div {
+    display: flex;           
+    align-items: center;        
+    width: 185px;   
     height: 30px;
+    margin:16px 0px 0px 1264px;
+    padding-top: 16px;
+    position: relative;
+    overflow: hidden;           /* ensure no content spills out */
 }
+
+.menu-search-input {
+    /* flex: 1;                      Allows input to take up remaining space */
+    border: none;                 /* Removes default input border */
+    outline: none;                /* Removes default focus outline */
+    font-size: 14px;              /* Font size of input text */
+    padding: 5px 30px 6px 13.73px;        /* Inner padding (adjust right for icon) */
+}
+
+.menu-search-icon {
+    position: absolute;                
+    margin-right: 10px;                       
+    width: 12.26px;                    
+    height: 12.26px;                   
+    cursor: pointer;                   
+}
+/* Placeholder text styling */
+.menu-search-input::placeholder {
+    color: black;                      
+    font-size: 14px;                   
+    opacity: 1;                        
+}
+
 .first-block{
     height: 837px;
     width: 1600px;
