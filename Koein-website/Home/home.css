@@ -2,6 +2,9 @@
   font-weight: bold;  
   font-family: 'Segoe UI';
 }
+.USD{
+    font-weight: 600;
+}
 body{
     margin: 0px;
     padding: 0px;
@@ -79,7 +82,6 @@ body{
     position: relative;
     width: 1600px;
     height: 62px;
-    background: transparent 0% 0% no-repeat padding-box;
     background-color: #F1F1F1;
 }
 .menu ul{

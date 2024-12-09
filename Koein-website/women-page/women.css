@@ -1,0 +1,121 @@
+*{
+    font-weight: bold;  
+    font-family: 'Segoe UI';
+  }
+  .USD{
+    font-weight: 600;
+  }
+  body{
+    margin: 0px;
+    padding: 0px;
+}
+.women-nav{
+    margin-left: 151px;
+    /* position: relative; */
+    height: 31.5px;
+}
+.women-nav ul{
+    list-style-type: none;
+}
+.women-nav li{
+    display: inline;
+    font-size: 12px;
+    cursor: pointer;
+}
+.women-nav li:nth-child(2){
+    margin-left: 35px;
+}
+.women-nav li:nth-child(3),li:nth-child(4),li:nth-child(8){
+    margin-left: 36px
+}
+
+.women-nav li:nth-child(5){
+    margin-left: 31px
+}
+.women-nav li:nth-child(6){
+    margin-left: 34px
+}
+.women-nav li:nth-child(7),li:nth-child(9){
+    margin-left: 33px
+}
+.women-page-pic{
+    position: relative;
+}
+.women-page-pic img{
+    position: absolute;
+}
+.women-page-pic div{
+    position: absolute;
+    color: white;
+    font-size: 63px;
+    margin: 75px 0px 0px 151px;
+}
+.women-page-pic button{
+    margin: 672px 0px 0px 151px;
+    width: 235px;
+    height: 67px;
+    background-color: transparent;
+    font-size: 16px;
+    color: white;
+    border: 1px solid white;
+    padding: 23px 52px 23px 53px;
+}
+.marccain-logo{
+    height: 146px; 
+    width: 264px; 
+    margin-top: 93px; 
+    margin-left: 365px;
+}
+.joop-logo{
+    margin-top: 75px;
+    margin-left: 98px;
+    width: 182px;
+    height: 182px;
+}
+.drykorn-logo{
+    margin-top: 133px;
+    margin-left: 129px;
+    width: 197px;
+    height: 67px;
+}
+.marccain-container{
+    position: relative;
+    width: 1600px;
+    height: 585px; 
+    margin-top: 81px;
+}
+.new-this-week-container{
+    position: relative; 
+    width: 1600px; 
+    height: 971px; 
+    background-color: black;
+}
+.new-this-week-container .txt1{
+    position: absolute;
+    font-size: 46px;
+    color: #FFFFFF;
+    margin: 78px 0px 0px 151px;
+}
+.new-this-week-container .arrows{
+    position: absolute;
+    margin: 220px 0px 0px 151px;
+}
+.new-this-week-container .txt2{
+    position: absolute;
+    margin: 875px 0px 0px 206px;
+    text-align: right;
+}
+.new-this-week-container .img1{
+    position: absolute;
+    margin: 78px 0px 0px 470px;
+}
+.new-this-week-container .img2{
+    position: absolute;
+    margin: 78px 0px 0px 1013px;
+}
+.new-this-week-container .txt3{
+    position: absolute;
+    margin: 879px 0px 0px 1013px;
+}
+
+    
