@@ -40,6 +40,8 @@
 }
 .women-page-pic{
     position: relative;
+    width: 1600px;
+    height: 813px;
 }
 .women-page-pic img{
     position: absolute;
@@ -62,21 +64,18 @@
 }
 .marccain-logo{
     height: 146px; 
-    width: 264px; 
-    margin-top: 93px; 
-    margin-left: 365px;
+    width: 264px;
+    margin-top: 93px;
 }
 .joop-logo{
-    margin-top: 75px;
-    margin-left: 98px;
     width: 182px;
     height: 182px;
+    margin: 75px 0px 0px 98px;
 }
 .drykorn-logo{
-    margin-top: 133px;
-    margin-left: 129px;
     width: 197px;
     height: 67px;
+    margin: 133px 0px 0px 129px;
 }
 .marccain-container{
     position: relative;
@@ -89,6 +88,7 @@
     width: 1600px; 
     height: 971px; 
     background-color: black;
+    margin-top: 130px;
 }
 .new-this-week-container .txt1{
     position: absolute;
@@ -117,5 +117,125 @@
     position: absolute;
     margin: 879px 0px 0px 1013px;
 }
+.img-container .img-container-img1{
+    margin-left: 151px;
+    }
+  .img-container .img-container-img2{
+    margin-left: 17px;
+    }
+  .img-container .img-container-img3{
+    margin-left: 16px;
+    }
+  .img-container-txt{
+    display: flex;
+    height: 32px; 
+    margin-top: 14px;
+    }
+  .img-container-txt div{
+    font-size: 24px;
+    }
+    .img-container-txt div:nth-child(1){
+    margin-left: 151px;
+    }
+    .img-container-txt div:nth-child(2){
+    margin-left: 237px;
+    }
+    .img-container-txt div:nth-child(3){
+    margin-left: 136px;
+    }
+    .img-container-txt div:nth-child(4){
+    margin-left: 192px;
+    }
+    .winter-style{
+        display: flex;
+        margin: 138px 0px 0px 151px;
+        height: 316px;
+    }
+    .winter-style .btn-container{
+        width: 412px;
+        background-color: black;
+    }
+    .winter-style .btn-container button{
+        margin: 125px 0px 0px 89px;
+        width: 235px;
+        height: 67px;
+        background-color: transparent;
+        color: white;
+        border: 1px solid white;
+        padding: 23px 32px;
+        cursor: pointer;
+    }
+    .marccain-bag{
+        position: relative;
+    }
+    .marccain-bag .marccain-bag-img{
+        position: absolute;
+        padding:114px 0px 0px 151px;
+        width: 638px;
+        height: 854px;
+    }
+    .marccain-logo2{
+        position: absolute;
+        padding: 403px 0px 0px 296px;
+        width: 348px;
+        height: 61px;
+    }
+    .marccain-bag-btn{
+        position: absolute;
+        padding: 705px 0px 0px 354px;
+    }
+    .marccain-bag-btn button{
+        width: 235px;
+        height: 67px;
+        background-color: transparent;
+        color: white;
+        border: 1px solid white;
+        padding: 23px 79px;
+        font-size: 16px;
+        cursor: pointer;
+    }
+    .swiper-wrapper{
+        margin: 213px 0px 0px 1024px;
+    }
+    .swiper, .swiper-wrapper, .swiper-slide {
+        box-sizing: border-box;
+    }    
+    .swiper-slide {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 20px;
+    }
+    .swiperslide.swiper-slide-active, .swiperslide.swiper-slide-next{
+        height: auto;
+        margin-top: 200px;
+    }
+    #swiper-pagination{
+        margin-left:245px;
+        transform: translateY(-70px);
 
-    
+    }
+    .swiper-pagination-bullet{
+        background: black !important;
+    }
+    .joop-container{
+        position: relative;
+        margin: 128.17px 0px 0px 151px;
+    }
+    .joop-container .joop-pic{
+        position: absolute;
+        width: 1298px;
+        height: 557px;
+    }
+    .joop-container .joop-logo{
+        position: absolute;
+        margin:63px 0px 0px 501px;
+        width: 296px;
+        height: 160px;
+    }
+    .joop-container .end-of-season{
+        position: absolute;
+        color: #FFFFFF;
+        font-size: 46px;
+        margin: 432px 0px 0px 453px;
+    }
