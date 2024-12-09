@@ -10,7 +10,7 @@
     padding: 0px;
 }
 .women-nav{
-    margin-left: 151px;
+    margin-left: 111px;
     /* position: relative; */
     height: 31.5px;
 }
@@ -21,6 +21,9 @@
     display: inline;
     font-size: 12px;
     cursor: pointer;
+}
+.women-nav li:nth-child(1){
+    margin-left: 0px;
 }
 .women-nav li:nth-child(2){
     margin-left: 35px;
@@ -238,4 +241,121 @@
         color: #FFFFFF;
         font-size: 46px;
         margin: 432px 0px 0px 453px;
+    }
+    #overlay{
+        position: fixed;
+        width: 1600px;
+        height: 504px;
+        background: white;
+        margin-top: 1.5px;
+        z-index: 1000;
+        overflow: auto;
+        display: none;
+    }
+    .overlay-head{
+        display: flex;
+        margin-top: 62px;
+    }
+    .overlay-head .div1{
+        font-size: 12px;
+        margin-left: 151px;
+    }
+    .overlay-head .div2{
+        font-size: 12px;
+        margin-left: 391.5px;
+    }
+    .overlay-head .div3{
+        font-size: 12px;
+        margin-left: 164px;
+    }
+
+    .clothing-div1{
+        width: 122px;
+        height: 264px;
+    }
+    .clothing-div1 ul{
+        list-style-type: none;
+        padding: 0px;
+        margin: 0px;
+    }
+    .clothing-div1 li{
+        font-size: 12px;
+        font-weight: normal;
+        cursor: pointer;
+        margin: 0px;
+        padding: 0px;
+        line-height: 31px;
+    }
+    .clothing-div1 li:nth-child(1){
+        padding-top: 26.5px;
+    }
+
+
+    .clothing-div2{
+        margin:0px 0px 0px 114px;
+        width: 148px;
+        height: 264px;
+    }
+    .clothing-div2 ul{
+        list-style-type: none;
+        padding: 0px;
+        margin: 0px;
+    }
+    .clothing-div2 li{
+        font-size: 12px;
+        font-weight: normal ;
+        cursor: pointer;
+        margin: 0px;
+        padding: 0px;
+        line-height: 31px;
+    }
+    .clothing-div2 li:nth-child(1){
+        padding-top: 26.5px;
+    }
+    
+
+    .top-brands{
+        margin:0px 0px 0px 55px;
+        width: 182px;
+        height: 104px;
+        border-top: 1px solid #707070;
+    }
+    .top-brands ul{
+        list-style-type: none;
+        padding: 0px;
+        margin: 0px;
+    }
+    .top-brands li{
+        font-size: 12px;
+        font-weight: normal ;
+        cursor: pointer;
+        margin: 0px;
+        padding: 0px;
+        line-height: 31px;
+    }
+    .top-brands li:nth-child(1){
+        padding-top: 26.5px;
+    }
+
+    .shop-by-look{
+        margin:0px 0px 0px 45px;
+        width: 182px;
+        height: 104px;
+        border-top: 1px solid #707070;
+    }
+    .shop-by-look ul{
+        list-style-type: none;
+        padding: 0px;
+        margin: 0px;
+    }
+    .shop-by-look li{
+        font-size: 12px;
+        font-weight: normal ;
+        cursor: pointer;
+        margin: 0px;
+        padding: 0px;
+        line-height: 31px;
+    }
+    .shop-by-look li:nth-child(1){
+        padding-top: 26.5px;
     }
