@@ -245,7 +245,7 @@ p.menu-collection{
     font-size: 16px;
 }
 .hover-women-block:hover .women-blc1{
-    filter: brightness(0.5)
+    filter: brightness(0.58)
 }
 .women-block:hover p {
     transition: ease-in-out 0.3s;
@@ -296,9 +296,9 @@ p.menu-collection{
   .swiper-pagination-bullet{
     background: black !important;
     }
-    .img-container .img-container-img1{
+    /* .img-container .img-container-img1{
         margin-left: 151px;
-    }
+    } */
     .img-container .img-container-img2{
     margin-left: 17px;
     }
@@ -344,7 +344,7 @@ p.menu-collection{
         display: none;
     }
     #big-container-hover:hover .big-container-pic1{
-        filter: brightness(0.5);
+        filter: brightness(0.52);
     }
     #big-container-hover:hover .big-container-icon{
         display: block;
@@ -489,10 +489,10 @@ p.menu-collection{
         font-size: 16px;
         width: 206px;
         height: 67px;
-        background-color: black;
+        /* background-color: transparent;
         color: #FFFFFF;
         border:1px #FFFFFF solid;
-        cursor: pointer;
+        cursor: pointer; */
     }
     .new-to-act-container{
         margin-left: 151px;

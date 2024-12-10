@@ -10,17 +10,18 @@
     padding: 0px;
 }
 .women-nav{
-    margin-left: 111px;
-    /* position: relative; */
-    height: 31.5px;
+    position: relative;
+    margin: 14px 0px 13px 111px;
 }
 .women-nav ul{
     list-style-type: none;
+    margin: 14px 0px 13px 0px;
 }
 .women-nav li{
     display: inline;
     font-size: 12px;
     cursor: pointer;
+    margin: 0px;
 }
 .women-nav li:nth-child(1){
     margin-left: 0px;
@@ -243,14 +244,16 @@
         margin: 432px 0px 0px 453px;
     }
     #overlay{
-        position: fixed;
+        position: absolute;
         width: 1600px;
         height: 504px;
         background: white;
-        margin-top: 1.5px;
+        top: 100%;
         z-index: 1000;
         overflow: auto;
         display: none;
+        transform: translatex(-151px);
+        border-top: 1px solid #707070;
     }
     .overlay-head{
         display: flex;
@@ -271,14 +274,18 @@
 
     .clothing-div1{
         width: 122px;
-        height: 264px;
     }
-    .clothing-div1 ul{
+    .clothing-div2{
+        margin:0px 0px 0px 114px;
+        width: 148px;
+    }
+    #overlay ul{
         list-style-type: none;
         padding: 0px;
         margin: 0px;
     }
-    .clothing-div1 li{
+    #overlay li{
+        display: block;
         font-size: 12px;
         font-weight: normal;
         cursor: pointer;
@@ -289,27 +296,7 @@
     .clothing-div1 li:nth-child(1){
         padding-top: 26.5px;
     }
-
-
-    .clothing-div2{
-        margin:0px 0px 0px 114px;
-        width: 148px;
-        height: 264px;
-    }
-    .clothing-div2 ul{
-        list-style-type: none;
-        padding: 0px;
-        margin: 0px;
-    }
-    .clothing-div2 li{
-        font-size: 12px;
-        font-weight: normal ;
-        cursor: pointer;
-        margin: 0px;
-        padding: 0px;
-        line-height: 31px;
-    }
-    .clothing-div2 li:nth-child(1){
+    #overlay li:nth-child(1){
         padding-top: 26.5px;
     }
     
@@ -358,4 +345,12 @@
     }
     .shop-by-look li:nth-child(1){
         padding-top: 26.5px;
+    }
+    #clothing:hover #overlay, #overlay:hover {
+        display: block;
+    }
+    /* When hovering over #clothing, make all other li elements normal weight */
+    #clothing:hover ~ li,
+    #clothing:hover li:not(#clothing) {
+    font-weight: normal;
     }
