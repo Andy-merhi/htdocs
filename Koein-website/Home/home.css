@@ -9,162 +9,146 @@ body{
     margin: 0px;
     padding: 0px;
 }
-.head {
-    position: relative;
-    width: 100%;;
+.head { 
+    display: flex;
+    width: 1600px;;
     height: 30px;
-    background-color: transparent; /* Ensures no black background */
+    margin-top: 0px;
+   box-sizing: border-box;
+   justify-content: space-between; /* Ensures space between elements */
 }
 .head ul{
-    /* display: flex; */
+    display: flex;
     list-style-type: none;
+    padding: 0;
+    margin: 0; 
 }
 .head li{
     cursor: pointer;
+    display: flex;                 /* Ensures that children are aligned correctly */
+    align-items: center; 
 }
 
 .image-noun-shipping, .txt1, .noun-store-img
 , .p-stores, .p-stores, .p-newsLetter, .p-About, .p-contact, .p-giftCard{
-    position: absolute;
+    
     font-size: 13px;
 }
 .image-noun-shipping{
-    top: 10px;
-    left: 151px;
-    /* UI Properties */
-  
+    margin: 10px 0px 0px 151px;
 }
 .txt1{
     margin-top: 6px;
-    margin-left: 143px;
-    text-align: left;
-    background: transparent 0% 0% no-repeat padding-box;
-  
+    margin-left: 10px;
+    font-size: 13px;
 }
 .noun-store-img{
-    margin: 9px auto auto 1051px;
+    margin: 9px 0px 0px 566px;
     width: 11px;
     height: 11px;
 }
 
 .p-stores{
     margin-top: 6px;
-    margin-left: 1068px;
+    margin-left: 6px;
     width: 47px;
     height: 17px;
 }
 .p-newsLetter{
     margin-top: 6px;
-    margin-left: 1135px;
+    margin-left: 20px;
     width: 82px;
     height: 17px;
 }
 .p-About{
     margin-top: 6px;
-    margin-left: 1239px;
+    margin-left: 22px;
     width: 44px;
     height: 17px;
 }
 .p-contact{
     margin-top: 6px;
-    margin-left: 1305px;
+    margin-left: 22px;
     width: 59px;
     height: 17px;
 }
 .p-giftCard{
     margin-top: 6px;
-    margin-left: 1386px;
+    margin-left: 22px;
     width: 63px;
     height: 17px;
 }
 /* menu bar component */
 .menu{
-    position: relative;
+    display: flex;
     width: 1600px;
     height: 62px;
     background-color: #F1F1F1;
+    justify-content: space-between; /* Ensures space between elements */
+    box-sizing: border-box;  
 }
 .menu ul{
-    /* display: flex; */
+    display: flex;
     list-style-type: none;
+    padding: 0;
+    margin: 0; 
 }
 .menu li{
     cursor: pointer;
+    display: flex;                 /* Ensures that children are aligned correctly */
+    align-items: center;  
 }
 .menu-new{
-    position: absolute;
-    margin-top: 21px;
-    margin-left: 151px;
+    margin: 21px 0px 22px 151px;
     width: 33px;
     height: 19px;
     font-size: 14px;
 }
-p.menu-men{
-    position: absolute;
-    margin: 21px;
-    margin-left: 216px;
+.menu-men{
+    margin: 21px 0px 22px 32px;
     width: 32px;
     height: 19px;
     font-size: 14px;
 }
-p.menu-women{
-    position: absolute;
-    margin-top: 21px;
-    margin-left: 279px;
+.menu-women{
+    margin: 21px 0px 22px 31px;
     width: 57px;
     height: 19px;
     font-size: 14px;
 }
-p.menu-collection{
-    position: absolute;
-    margin-top: 21px;
-    margin-left: 368px;
+.menu-collection{
+    margin: 21px 0px 22px 32px;
     width: 92px;
     height: 19px;
     font-size: 14px;
 }
 .menu-div{
-    position: absolute;
     background-color: #000000;
-    margin-top: 19px;
-    margin-left: 485px;
+    margin: 19px 0px 19px 25px;
     width: 57px;
     height: 24px;
-}
-.menu-sale{
-    position: absolute;
     color: #FFFFFF;
-    margin-top: 22px;
-    margin-left: 498px;
-    width: 32px;
-    height: 19px;
     font-size: 14px;
+    padding: 3px 0px 0px 13px;
 }
+
 .menu-grp3{
-    position: absolute;
-    margin-top: 15px;
-    margin-left: 767px;
+    margin: 15px 0px 15.45px 225.47px;
     width: 65px;
     height: 32px;
 }
 .menu-bag{
-    position: absolute;
-    margin-top: 18px;
-    margin-left: 1123px;
+    margin: 18px 0px 18.54px 280px;
     width: 24px;
     height: 25px;
 }
 .menu-profile{
-    position: absolute;
-    margin-top: 21px;
-    margin-left: 1171px;
-    width: 30px;
+    margin: 21px 0px 21.26px 27.8px;
+    width: 17px;
     height: 19px;
 }
 .menu-heart{
-    position: absolute;
-    margin-top: 21.5px;
-    margin-left: 1220px;
+    margin: 21.5px 0px 20.81px 27.8px;
     width: 23px;
     height: 20px;
 }
@@ -173,14 +157,11 @@ p.menu-collection{
     align-items: center;        
     width: 185px;   
     height: 30px;
-    margin:16px 0px 0px 1264px;
-    padding-top: 16px;
-    position: relative;
+    margin:16px 0px 16px 21.5px;
     overflow: hidden;           /* ensure no content spills out */
 }
 
 .menu-search-input {
-    /* flex: 1;                      Allows input to take up remaining space */
     border: none;                 /* Removes default input border */
     outline: none;                /* Removes default focus outline */
     font-size: 14px;              
@@ -189,7 +170,7 @@ p.menu-collection{
 
 .menu-search-icon {
     position: absolute;                
-    right: 10px;                        /* Keeps the icon inside the right edge */
+    margin-left: 162px;                        /* Keeps the icon inside the right edge */
     width: 12.26px;                    
     height: 12.26px;                   
     cursor: pointer;                   
@@ -249,7 +230,7 @@ p.menu-collection{
 }
 .women-block:hover p {
     transition: ease-in-out 0.3s;
-    margin-top: 138px;
+    margin-top: 138dp;
 }
 .women-block:hover .women-on-hover{
     transition: ease-in-out 0.7s;
@@ -328,12 +309,9 @@ p.menu-collection{
   .bigPic-container{
     width: 800px; 
     height: 962px; 
-    position: relative;
+    display: flex;
     }
-  .bigPic-container .big-container-pic1{
-    position: absolute;
-    }
-  .bigPic-container p{
+  .bigPic-container div{
     font-size: 46px;
     position: absolute;
     color: #FFFFFF;
@@ -593,4 +571,9 @@ p.menu-collection{
         margin: 23.5px 0px 0px 151px;
         display: flex;
     }
- 
+    @media (max-width: 394px) {
+        .women-blc1{
+            width: 356px;
+            height: 571px;
+        }
+    }
