@@ -298,7 +298,8 @@ position: relative;
         width: 1300px;
         display: flex;
     }
-    .second-div img:nth-child(2), img:nth-child(3){
+    .second-div img:nth-child(2), 
+    .second-div img:nth-child(3){
     margin-left: 17px;
     }
     .second-div img:nth-child(4){
@@ -682,6 +683,98 @@ position: relative;
         margin: 23.5px 0px 0px 151px;
         display: flex;
     }
+    .footer{
+        display: inline-flex;
+    }
+    .footer .footer-left{
+        display: flex;
+        width: 800px;
+        height: 368px;
+    }
+    .footer .footer-left ul:nth-child(1){
+        list-style-type: none;
+        padding: 0px;
+        margin: 80px 0px 0px 151px  ;
+    }
+    .footer .footer-left li{
+        display: block;
+        font-size: 12px;
+        cursor: pointer;
+        margin: 0px;
+        padding: 0px;
+        line-height: 31px;
+    }
+    .footer .footer-left ul:nth-child(2){
+        list-style-type: none;
+        padding: 0px;
+        margin: 80px 0px 0px 70px  ;
+    }
+
+    .footer .footer-right{
+        width: 800px;
+        height: 368px;
+        background-color: #F3F3F3;
+        position: relative;
+    }
+    .footer .footer-right div:nth-child(1){
+        position: absolute;
+        font-size: 46px;
+        color: black;
+        margin: 80px 0px 0px 151px;
+    }
+    .footer-right .input-container{
+        position: absolute;
+        border: none;
+        border-bottom: 2px solid black;
+        margin: 170px 0px 0px 151px;
+    }
+    .footer-right .input-container input{
+        border: none;
+        outline: none;
+        background:transparent;
+        width: 475px;
+    }
+    .footer-right .input-container span{
+        font-size:large;
+    }
+    .social-icons{
+        display: flex;
+    }
+    .icon {
+        display: inline-block;
+        width: 24px;
+        height: 24px;
+        background-size: cover;
+      }
+      
+      .icon.instagram {
+        background-image: url('https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png');
+      }
+      
+      .icon.facebook {
+        background-image: url('https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg');
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+      }
+      .social-icons .footer-text{
+        font-size: 12px;
+        text-align: right;
+      }
+      .social-icons .footer-text p{
+        margin: 0;
+      }
+      .social-icons a:nth-child(1){
+        margin: 260px 0px 0px 151px;
+      }
+      .social-icons a:nth-child(2){
+        margin: 260px 0px 0px 21px;
+      }
+      .social-icons div:nth-child(3){
+        margin: 260px 0px 0px 271px;
+      }
+    
+
     @media (max-width: 394px) {
         .women-blc1{
             width: 356px;
