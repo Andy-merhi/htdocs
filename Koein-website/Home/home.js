@@ -3,7 +3,7 @@
     // Configuration options
     loop: true, // Loop through slides
     autoplay: {
-      delay: 5000, // Auto-slide every 5 seconds
+      delay: 500000, // Auto-slide every 5 seconds
       disableOnInteraction: false,
     },
     pagination: {
