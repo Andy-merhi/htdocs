@@ -229,66 +229,59 @@ height: 67px;
 margin: 133px 0px 0px 129px;
 }
 .third-div{
-    position: relative;
-    width: 1600px;
+    /* position: relative; */
+    display: flex;
+    width: 1295px;
     height: 585px; 
-    margin-top: 81px;
-    }
-.third-div .div1{
-    position: absolute;
-    margin-left: 151px;
-    width: 319px;
-}
-.third-div .div2{
-    position: absolute;
-    margin-left: 477px;
-} 
-
-.third-div .div3{
-    position: absolute;
-    margin-left: 803px;
+    margin: 81px 0px 0px 151px;
+    gap: 7px;
 }
 .third-div .div4{
-    position: absolute;
-    margin-left: 1130px;
+    gap: 8px
 }
-
-
-
-
 .fourth-container{
-    position: relative; 
+    display: flex;
     width: 1600px; 
     height: 971px; 
     background-color: black;
     margin-top: 130px;
+    position: relative;
 }
 .fourth-container .txt1{
-    position: absolute;
     font-size: 46px;
     color: #FFFFFF;
     margin: 78px 0px 0px 151px;
+   
 }
 .fourth-container .arrows{
+    width: 64px;
+    height: 7px;
     position: absolute;
     margin: 220px 0px 0px 151px;
 }
-.fourth-container .txt2{
-    position: absolute;
-    margin: 875px 0px 0px 206px;
-    text-align: right;
+
+.fourth-container .fourth-container-div1{
+    display: flex;
+    align-items: flex-end;
 }
+.fourth-container .fourth-container-div2{
+    margin: 78px 0px 0px 27px;
+}
+
 .fourth-container .img1{
-    position: absolute;
-    margin: 78px 0px 0px 470px;
+    width: 516px;
+    height: 893px;
+    margin-top: 78px;
     }
 .fourth-container .img2{
-    position: absolute;
-    margin: 78px 0px 0px 1013px;
+    width: 436px;
+    height: 784px;
+    
     }
-.fourth-container .txt3{
-    position: absolute;
-    margin: 879px 0px 0px 1013px;
+.fourth-container .fourth-container-div1 .txt2{
+    font-size: 13px;
+    text-align: right;
+    margin: auto 27px 18px auto;
 }
 
 .fifth-container{
@@ -449,4 +442,196 @@ margin: 133px 0px 0px 129px;
     color: #FFFFFF;
     font-size: 46px;
     margin: 432px 0px 0px 453px;
+}
+
+@media (max-width: 394px){
+    .slogan{
+        font-size: 12px;
+    }
+    .women-nav{
+        display: none;
+    }
+    
+    .first-div{
+        width: 393px;
+        height: 781px;
+        }
+        .first-div img{
+            margin-left: -528px;   
+            height: 781px;  
+         }
+        .first-div div{
+        font-size: 30px;
+        margin: 111px 0px 0px 19px;
+        }
+        .first-div button{
+        margin: 688px 0px 0px 19px;
+        width: 178px;
+        height: 51px;
+        padding: 15px 24px;
+        }
+
+        .second-div{
+            margin-left: 28px; 
+            width: auto; 
+        }
+        .second-div img:nth-child(1){
+            width: 113px;
+            height: 62px;
+            margin-top: 64px;
+        }
+        .second-div img:nth-child(2){
+            width: 78px;
+            height: 78px;
+            margin: 56px 0px 0px 26px;
+        }
+        .second-div img:nth-child(3){
+            width: 84px;
+            height: 29px;
+            margin: 81px 0px 0px 37px;
+        }
+
+        .third-div{
+            flex-wrap: wrap;
+            width: 356px;
+            height: 777px; 
+            margin: 65px 18px 0px 19px;
+            gap: 10px;
+        }
+        .third-div div img{
+            width: 176px;
+            height: 274px;
+        }
+        .third-div > div {
+            flex: 1 1 48%; /* Each child takes 48% width with flexibility */
+            max-width: 48%; /* Ensures no child exceeds this width */
+            box-sizing: border-box; /* Includes padding and border in width */
+        }
+
+        .fourth-container{
+            width: 393px;
+            height: 828px;
+            margin-top: 62px;
+        }
+        .fourth-container .txt1{
+            font-size: 30px;
+            margin: 54px 0px 0px 19px;
+            /* white-space: nowrap;  */
+        }
+        .fourth-container .arrows{
+            margin: 178px 0px 0px 19px;
+        }
+
+        .fourth-container .fourth-container-div1{
+            flex-wrap: wrap-reverse;
+            height: fit-content;
+            margin: 235px 0px 18px 0px; 
+        }
+        .fourth-container .img1{
+            width: 274px;
+            height: 474px;
+            margin-top: 0px;
+            }
+        .fourth-container .fourth-container-div2{
+            display: none;
+        }
+        
+        
+        .fifth-container{
+            margin-top: 24px;
+            margin-left: 19px;
+            width: 355px;
+            height: 516px;
+            flex-wrap: wrap;
+            gap: 8px;
+        }  
+        .fifth-container div{
+            flex: 1 1 48%; /* Each child takes 48% width with flexibility */
+            max-width: 48%; /* Ensures no child exceeds this width */
+            box-sizing: border-box; /* Includes padding and border in width */
+        }
+        .fifth-container .img-container-img1{
+            margin-left: 0px;
+        }
+        .fifth-container .img-container-img1 img,
+        .fifth-container .img-container-img2 img,
+        .fifth-container .img-container-img3 img,
+        .fifth-container .img-container-img4 img{
+            width: 173px;
+            height: 217px;
+        }
+        .fifth-container .img-container-img2{
+            margin-left: 0;
+        }
+        .fifth-container .img-container-img3{
+            margin-left: 0;
+        }
+        .fifth-container-txt{
+            font-size: 13px;
+            margin-top: 0px;
+            white-space: nowrap;
+        }
+
+        .sixth-container{
+            flex-wrap: wrap;
+            margin: 62px 0px 0px 19px;
+            width: 356px;
+            height: 259px;
+        }
+        .sixth-container .btn-container{
+            width: 356px;
+            height: 132px;
+            background-color: black;
+        }
+        .sixth-container .btn-container button{
+            margin: 37px 0px 0px 77px;
+            width: 203px;
+            height: 58px;
+            padding: 23px 32px;
+        }
+        .sixth-container div:nth-child(2) img{
+            width: 355px;
+            height: 127px;
+        }
+
+        /* General Styles */
+        .seventh-container {
+            flex-wrap: wrap;
+            left: 19px;
+            width: 355px;
+            height: 475px;
+        }
+        /* Marc Cain Bag Section */
+        .seventh-container .div {
+            width: 355px;
+            height: 475px;
+            top:37px
+        }
+        .seventh-container .div .first-img{
+            padding: 0px;
+            left: 19px;
+            width: 355px;
+            height: 475px;
+        }
+        .seventh-container .div .first-img img{
+            width: 355px;
+            height: 475px;
+        }
+        .seventh-container .brand-logo{
+            padding: 161px 0px 0px 100px;
+        }
+        .seventh-container .brand-logo img{
+            width: 194px;
+            height: 34px;
+        }
+        .seventh-container .div .div-btn{
+            position: absolute;
+            padding: 320px 0px 0px 101px;
+        }
+        .seventh-container .div .div-btn button {
+            width: 193px;
+            height: 55px;
+            padding: 0;
+            font-size: 16px;
+        }
 }
