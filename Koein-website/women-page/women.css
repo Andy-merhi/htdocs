@@ -1,356 +1,452 @@
 *{
-    font-weight: bold;  
-    font-family: 'Segoe UI';
-  }
-  .USD{
-    font-weight: 600;
-  }
-  body{
-    margin: 0px;
-    padding: 0px;
+font-weight: bold;  
+font-family: 'Segoe UI';
+}
+.USD{
+font-weight: 600;
+margin-top: 8px;
+font-size: 12px;
+}
+.slogan{
+margin-top: 20px; 
+font-size: 13px; 
+}
+body{
+margin: 0px;
+padding: 0px;
 }
 .women-nav{
-    position: relative;
-    margin: 14px 0px 13px 111px;
+position: relative;
+margin: 14px 0px 13px 111px;
 }
 .women-nav ul{
-    list-style-type: none;
-    margin: 14px 0px 13px 0px;
+list-style-type: none;
+margin: 14px 0px 13px 0px;
+margin: 0px;
 }
 .women-nav li{
-    display: inline;
-    font-size: 12px;
-    cursor: pointer;
-    margin: 0px;
+display: inline;
+font-size: 12px;
+cursor: pointer;
+margin: 0px;
 }
 .women-nav li:nth-child(1){
-    margin-left: 0px;
+margin-left: 0px;
 }
 .women-nav li:nth-child(2){
-    margin-left: 35px;
+margin-left: 35px;
 }
 .women-nav li:nth-child(3),li:nth-child(4),li:nth-child(8){
-    margin-left: 36px
+margin-left: 36px
 }
 
 .women-nav li:nth-child(5){
-    margin-left: 31px
+margin-left: 31px
 }
 .women-nav li:nth-child(6){
-    margin-left: 34px
+margin-left: 34px
 }
 .women-nav li:nth-child(7),li:nth-child(9){
-    margin-left: 33px
+margin-left: 33px
 }
-.women-page-pic{
-    position: relative;
-    width: 1600px;
-    height: 813px;
+
+#overlay{
+position: absolute;
+width: 1600px;
+height: 504px;
+background: white;
+top: 100%;
+z-index: 1000;
+overflow: auto;
+display: none;
+transform: translatex(-151px);
+border-top: 1px solid #707070;
 }
-.women-page-pic img{
-    position: absolute;
+.overlay-head{
+display: flex;
+margin-top: 62px;
 }
-.women-page-pic div{
-    position: absolute;
-    color: white;
-    font-size: 63px;
-    margin: 75px 0px 0px 151px;
+.overlay-head .div1{
+font-size: 12px;
+margin-left: 151px;
 }
-.women-page-pic button{
-    margin: 672px 0px 0px 151px;
-    width: 235px;
-    height: 67px;
-    background-color: transparent;
-    font-size: 16px;
-    color: white;
-    border: 1px solid white;
-    padding: 23px 52px 23px 53px;
+.overlay-head .div2{
+font-size: 12px;
+margin-left: 391.5px;
 }
-.marccain-logo{
-    height: 146px; 
-    width: 264px;
-    margin-top: 93px;
+.overlay-head .div3{
+font-size: 12px;
+margin-left: 164px;
 }
-.joop-logo{
-    width: 182px;
-    height: 182px;
-    margin: 75px 0px 0px 98px;
+.overlay-body{
+display: flex; 
+margin:13.5px 0px 0px 151px;
 }
-.drykorn-logo{
-    width: 197px;
-    height: 67px;
-    margin: 133px 0px 0px 129px;
+.overlay-clothing{
+display: flex; 
+border-top: 1px solid #707070;
 }
-.marccain-container{
+
+.clothing-div1{
+width: 122px;
+}
+.clothing-div2{
+margin:0px 0px 0px 114px;
+width: 148px;
+}
+#overlay ul{
+list-style-type: none;
+padding: 0px;
+margin: 0px;
+}
+#overlay li{
+display: block;
+font-size: 12px;
+font-weight: normal;
+cursor: pointer;
+margin: 0px;
+padding: 0px;
+line-height: 31px;
+}
+.clothing-div1 li:nth-child(1){
+padding-top: 26.5px;
+}
+#overlay li:nth-child(1){
+padding-top: 26.5px;
+}
+
+
+.top-brands-div{
+margin:0px 0px 0px 55px;
+width: 182px;
+height: 104px;
+border-top: 1px solid #707070;
+}
+.top-brands-div ul{
+list-style-type: none;
+padding: 0px;
+margin: 0px;
+}
+.top-brands-div li{
+font-size: 12px;
+font-weight: normal ;
+cursor: pointer;
+margin: 0px;
+padding: 0px;
+line-height: 31px;
+}
+.top-brands-div li:nth-child(1){
+padding-top: 26.5px;
+}
+
+.shop-by-look{
+margin:0px 0px 0px 45px;
+width: 182px;
+height: 104px;
+border-top: 1px solid #707070;
+}
+.shop-by-look ul{
+list-style-type: none;
+padding: 0px;
+margin: 0px;
+}
+.shop-by-look li{
+font-size: 12px;
+font-weight: normal ;
+cursor: pointer;
+margin: 0px;
+padding: 0px;
+line-height: 31px;
+}
+.shop-by-look li:nth-child(1){
+padding-top: 26.5px;
+}
+.overlay-pic1{
+margin-left: 44.5px;
+}
+.overlay-pic2{
+margin: 0px 151px 0px 17px;
+}
+.overlay-pic1 div, .overlay-pic2 div{
+font-size: 13px; 
+margin-top: 10px;
+}
+#clothing:hover #overlay, #overlay:hover {
+display: block;
+}
+/* When hovering over #clothing, make all other li elements normal weight */
+#clothing:hover ~ li,
+#clothing:hover li:not(#clothing) {
+font-weight: normal;
+}
+
+
+
+.first-div{
+position: relative;
+width: 1600px;
+height: 813px;
+}
+.first-div img{
+position: absolute;
+}
+.first-div div{
+position: absolute;
+color: white;
+font-size: 63px;
+margin: 75px 0px 0px 151px;
+}
+.first-div button{
+position: absolute;
+margin: 672px 0px 0px 151px;
+width: 235px;
+height: 67px;
+background-color: transparent;
+font-size: 16px;
+color: white;
+border: 1px solid white;
+padding: 23px 52px 23px 53px;
+}
+.second-div{
+display: flex; 
+margin-left: 365px; 
+width: 870px; 
+position: relative;
+}
+.second-div img:nth-child(1){
+height: 146px; 
+width: 264px;
+margin-top: 93px;
+}
+.second-div img:nth-child(2){
+width: 182px;
+height: 182px;
+margin: 75px 0px 0px 98px;
+}
+.second-div img:nth-child(3){
+width: 197px;
+height: 67px;
+margin: 133px 0px 0px 129px;
+}
+.third-div{
     position: relative;
     width: 1600px;
     height: 585px; 
     margin-top: 81px;
+    }
+.third-div .div1{
+    position: absolute;
+    margin-left: 151px;
+    width: 319px;
 }
-.new-this-week-container{
+.third-div .div2{
+    position: absolute;
+    margin-left: 477px;
+} 
+
+.third-div .div3{
+    position: absolute;
+    margin-left: 803px;
+}
+.third-div .div4{
+    position: absolute;
+    margin-left: 1130px;
+}
+
+
+
+
+.fourth-container{
     position: relative; 
     width: 1600px; 
     height: 971px; 
     background-color: black;
     margin-top: 130px;
 }
-.new-this-week-container .txt1{
+.fourth-container .txt1{
     position: absolute;
     font-size: 46px;
     color: #FFFFFF;
     margin: 78px 0px 0px 151px;
 }
-.new-this-week-container .arrows{
+.fourth-container .arrows{
     position: absolute;
     margin: 220px 0px 0px 151px;
 }
-.new-this-week-container .txt2{
+.fourth-container .txt2{
     position: absolute;
     margin: 875px 0px 0px 206px;
     text-align: right;
 }
-.new-this-week-container .img1{
+.fourth-container .img1{
     position: absolute;
     margin: 78px 0px 0px 470px;
-}
-.new-this-week-container .img2{
+    }
+.fourth-container .img2{
     position: absolute;
     margin: 78px 0px 0px 1013px;
-}
-.new-this-week-container .txt3{
+    }
+.fourth-container .txt3{
     position: absolute;
     margin: 879px 0px 0px 1013px;
 }
-.img-container .img-container-img1{
-    margin-left: 151px;
-    }
-  .img-container .img-container-img2{
-    margin-left: 17px;
-    }
-  .img-container .img-container-img3{
-    margin-left: 16px;
-    }
-  .img-container-txt{
+
+.fifth-container{
+    margin-top: 113px; 
+    width: 1600px; 
     display: flex;
-    height: 32px; 
-    margin-top: 14px;
-    }
-  .img-container-txt div{
-    font-size: 24px;
-    }
-    .img-container-txt div:nth-child(1){
+}  
+.fifth-container .img-container-img1{
     margin-left: 151px;
-    }
-    .img-container-txt div:nth-child(2){
-    margin-left: 237px;
-    }
-    .img-container-txt div:nth-child(3){
-    margin-left: 136px;
-    }
-    .img-container-txt div:nth-child(4){
-    margin-left: 192px;
-    }
-    .winter-style{
-        display: flex;
-        margin: 138px 0px 0px 151px;
-        height: 316px;
-    }
-    .winter-style .btn-container{
-        width: 412px;
-        background-color: black;
-    }
-    .winter-style .btn-container button{
-        margin: 125px 0px 0px 89px;
-        width: 235px;
-        height: 67px;
-        background-color: transparent;
-        color: white;
-        border: 1px solid white;
-        padding: 23px 32px;
-        cursor: pointer;
-    }
-    .marccain-bag{
-        position: relative;
-    }
-    .marccain-bag .marccain-bag-img{
-        position: absolute;
-        padding:114px 0px 0px 151px;
-        width: 638px;
-        height: 854px;
-    }
-    .marccain-logo2{
-        position: absolute;
-        padding: 403px 0px 0px 296px;
-        width: 348px;
-        height: 61px;
-    }
-    .marccain-bag-btn{
-        position: absolute;
-        padding: 705px 0px 0px 354px;
-    }
-    .marccain-bag-btn button{
-        width: 235px;
-        height: 67px;
-        background-color: transparent;
-        color: white;
-        border: 1px solid white;
-        padding: 23px 79px;
-        font-size: 16px;
-        cursor: pointer;
-    }
-    .swiper-wrapper{
-        margin: 213px 0px 0px 1024px;
-    }
-    .swiper, .swiper-wrapper, .swiper-slide {
-        box-sizing: border-box;
-    }    
-    .swiper-slide {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-size: 20px;
-    }
-    .swiperslide.swiper-slide-active, .swiperslide.swiper-slide-next{
-        height: auto;
-        margin-top: 200px;
-    }
-    #swiper-pagination{
-        margin-left:245px;
-        transform: translateY(-70px);
+}
+.fifth-container .img-container-img1 img{
+    width: 313px;
+    height: 393px;
+}
+.fifth-container .img-container-img2{
+    margin-left: 17px;
+}
+.fifth-container .img-container-img3{
+    margin-left: 16px;
+}
+.fifth-container-txt{
+    font-size: 24px;
+    margin-top: 14px;
+}
 
-    }
-    .swiper-pagination-bullet{
-        background: black !important;
-    }
-    .joop-container{
-        position: relative;
-        margin: 128.17px 0px 0px 151px;
-    }
-    .joop-container .joop-pic{
-        position: absolute;
-        width: 1298px;
-        height: 557px;
-    }
-    .joop-container .joop-logo{
-        position: absolute;
-        margin:63px 0px 0px 501px;
-        width: 296px;
-        height: 160px;
-    }
-    .joop-container .end-of-season{
-        position: absolute;
-        color: #FFFFFF;
-        font-size: 46px;
-        margin: 432px 0px 0px 453px;
-    }
-    #overlay{
-        position: absolute;
-        width: 1600px;
-        height: 504px;
-        background: white;
-        top: 100%;
-        z-index: 1000;
-        overflow: auto;
-        display: none;
-        transform: translatex(-151px);
-        border-top: 1px solid #707070;
-    }
-    .overlay-head{
-        display: flex;
-        margin-top: 62px;
-    }
-    .overlay-head .div1{
-        font-size: 12px;
-        margin-left: 151px;
-    }
-    .overlay-head .div2{
-        font-size: 12px;
-        margin-left: 391.5px;
-    }
-    .overlay-head .div3{
-        font-size: 12px;
-        margin-left: 164px;
-    }
+.sixth-container{
+    display: flex;
+    margin: 138px 0px 0px 151px;
+    height: 316px;
+}
+.sixth-container .btn-container{
+    width: 412px;
+    background-color: black;
+}
+.sixth-container .btn-container button{
+    margin: 125px 0px 0px 89px;
+    width: 235px;
+    height: 67px;
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    padding: 23px 32px;
+    cursor: pointer;
+}
+/* General Styles */
+.seventh-container {
+    display: flex;
+    height: 968px;
+    width: 1600px;
+}
 
-    .clothing-div1{
-        width: 122px;
-    }
-    .clothing-div2{
-        margin:0px 0px 0px 114px;
-        width: 148px;
-    }
-    #overlay ul{
-        list-style-type: none;
-        padding: 0px;
-        margin: 0px;
-    }
-    #overlay li{
-        display: block;
-        font-size: 12px;
-        font-weight: normal;
-        cursor: pointer;
-        margin: 0px;
-        padding: 0px;
-        line-height: 31px;
-    }
-    .clothing-div1 li:nth-child(1){
-        padding-top: 26.5px;
-    }
-    #overlay li:nth-child(1){
-        padding-top: 26.5px;
-    }
-    
+/* Marc Cain Bag Section */
+.seventh-container .div {
+    position: relative;
+}
+.seventh-container .div .first-img{
+    position: absolute;
+    padding: 114px 0px 0px 151px;
+    width: 638px;
+    height: 854px;
+}
+.brand-logo{
+    position: absolute;
+    padding: 403px 0px 0px 296px;
+    width: 348px;
+    height: 61px;
+}
+.seventh-container .div .div-btn{
+    position: absolute;
+    padding: 705px 0px 0px 354px;
+}
+.seventh-container .div .div-btn button {
+    width: 235px;
+    height: 67px;
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    padding: 23px 79px;
+    font-size: 16px;
+    cursor: pointer;
+}
 
-    .top-brands{
-        margin:0px 0px 0px 55px;
-        width: 182px;
-        height: 104px;
-        border-top: 1px solid #707070;
-    }
-    .top-brands ul{
-        list-style-type: none;
-        padding: 0px;
-        margin: 0px;
-    }
-    .top-brands li{
-        font-size: 12px;
-        font-weight: normal ;
-        cursor: pointer;
-        margin: 0px;
-        padding: 0px;
-        line-height: 31px;
-    }
-    .top-brands li:nth-child(1){
-        padding-top: 26.5px;
-    }
+/* Swiper Container */
+.swiper {
+    box-sizing: border-box;
+}
+.swiper-wrapper {
+    margin: 213px 0px 0px 1024px;
+}
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+}
+.swiper-slide img {
+    height: 482px;
+}
+.swiper-slide .slide-content {
+    position: absolute;
+    width: 309px;
+    height: 657px;
+}
 
-    .shop-by-look{
-        margin:0px 0px 0px 45px;
-        width: 182px;
-        height: 104px;
-        border-top: 1px solid #707070;
-    }
-    .shop-by-look ul{
-        list-style-type: none;
-        padding: 0px;
-        margin: 0px;
-    }
-    .shop-by-look li{
-        font-size: 12px;
-        font-weight: normal ;
-        cursor: pointer;
-        margin: 0px;
-        padding: 0px;
-        line-height: 31px;
-    }
-    .shop-by-look li:nth-child(1){
-        padding-top: 26.5px;
-    }
-    #clothing:hover #overlay, #overlay:hover {
-        display: block;
-    }
-    /* When hovering over #clothing, make all other li elements normal weight */
-    #clothing:hover ~ li,
-    #clothing:hover li:not(#clothing) {
-    font-weight: normal;
-    }
+/* Active and Next Slide Styles */
+.swiperslide.swiper-slide-active, 
+.swiperslide.swiper-slide-next {
+    height: auto;
+    margin-top: 200px;
+}
+/* Pagination */
+#swiper-pagination {
+    margin-left: 245px;
+    transform: translateY(-70px);
+}
+.swiper-pagination-bullet {
+    background: black !important;
+}
+
+.eighth-container{
+    display: flex; 
+    margin-top: 120px;
+}
+.eighth-container div:nth-child(1){
+    margin-left: 151px;
+}
+.eighth-container .two-pics{
+    margin-left: 11px;
+}
+.eighth-container .txt{
+    font-size: 13px;
+    margin-top: 13px;
+}
+.double-arrows{
+    margin-top: 55px; 
+    margin-left: 151px;
+    width: 64px; 
+    height: 7px;
+}
+
+.last-container{
+    position: relative;
+    margin: 128.17px 0px 0px 151px;
+}
+.last-container .last-container-pic{
+    position: absolute;
+    width: 1298px;
+    height: 557px;
+}
+.last-container .logo{
+    position: absolute;
+    margin:63px 0px 0px 501px;
+    width: 296px;
+    height: 160px;
+}
+.last-container .txt{
+    position: absolute;
+    color: #FFFFFF;
+    font-size: 46px;
+    margin: 432px 0px 0px 453px;
+}
