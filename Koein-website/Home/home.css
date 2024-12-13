@@ -694,6 +694,7 @@
         position: relative;
         width: 917px;
         height: 545px;
+        filter: brightness(0.41);
     }
     .marccain-logo2{
         position: absolute;
@@ -783,6 +784,18 @@
         display: flex;
         flex-wrap: wrap;
     }
+    .browse-again-container .categorie button:nth-child(1){
+        margin: 0px 18px 19px 0px;
+    }
+    .browse-again-container .categorie button:nth-child(2){
+        margin: 0px 0px 19px 0px;
+    }
+    .browse-again-container .categorie button:nth-child(3){
+        margin: 0px 18px 0px 0px;
+    }
+    .browse-again-container .categorie button:nth-child(4){
+        margin: 0px;
+    }
     .categorie button {
         flex: 1 1 45%;      
         text-align: center;        
@@ -791,34 +804,56 @@
         cursor: pointer;           
         font-size: 16px;
     }
+
+
+    .eighth-container{
+        display: flex;
+    }
     .delivery-logo{
+        margin: 169.5px 0px 0px 340.8px;
+    }
+    .delivery-logo img{
         width: 59px;
         height: 26px;
-        margin: 169.5px 0px 0px 340.8px;
-        position: absolute;
+    }
+    .delivery-logo div{
+        text-align: center;
+        margin-top: 25.9px;
+        transform: translateX(-16px);
+        font-size: 12px;
     }
     .qlt-logo{
-        margin: 165px 0px 0px 782px;
-        position: absolute;
+        margin: 165px 0px 0px 331px;
     }
+    .qlt-logo img{
+        width: 35px;
+        height: 35px;
+    }
+    .qlt-logo div{
+        margin-top: 21.13px;
+        transform: translateX(-40px);
+        font-size: 12px;
+    }
+
     .location-logo{
-        margin: 166.5px 0px 0px 1219px
+        margin: 166.5px 0px 0px 256px
     }
-    .fast-logo-txt{
-        position: absolute;
+    .location-logo img{
+        width: 27px;
+        height: 33px;
+    }
+    .location-logo div{
+        margin-top: 22px;
+        transform: translateX(-38px);
         font-size: 12px;
-        margin: 25.91px 0px 0px 325px ;
     }
-    .qlt-logo-txt{
-        position: absolute;
-        font-size: 12px;
-        margin: 21.13px 0px 0px 739px;
+
+    .apparel-container{
+        font-size: 29px; 
+        margin: 181.5px 0px 0px 604px;
     }
-    .location-logo-txt{
-        font-size: 12px;
-        margin: 22px 0px 0px 1180px;
-    }
-    .pics{
+
+    .before-footer-container{
         margin: 23.5px 0px 0px 151px;
         display: flex;
     }
@@ -881,27 +916,23 @@
     }
     .icon {
         display: inline-block;
-        width: 24px;
-        height: 24px;
         background-size: cover;
       }
       
       .icon.instagram {
         background-image: url('https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png');
+        width: 17px;
+        height: 17px;
       }
       
       .icon.facebook {
         background-image: url('https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg');
-        background-position: center;
-        background-size: contain;
-        background-repeat: no-repeat;
+        width: 9px;
+        height: 16px;
       }
       .social-icons .footer-text{
         font-size: 12px;
         text-align: right;
-      }
-      .social-icons .footer-text p{
-        margin: 0;
       }
       .social-icons a:nth-child(1){
         margin: 260px 0px 0px 151px;
@@ -1264,4 +1295,176 @@
         .second-div div:nth-child(3), div:nth-child(4) {
             margin:0
         }
+
+        .marccain-container{
+            flex-wrap: wrap;
+            margin-top: 41px;
+            margin-left: 19px;
+        }
+        .marccain-pic{
+            width: 355px;
+            height: 209px;
+        }
+        .marccain-pic img:nth-child(1){
+            width: 355px;
+            height: 209px;
+        }
+        .marccain-logo2{
+            display: none;
+        }
+        .shop-now{
+            width: 355px;
+            height: 330px;
+        }
+        .shop-now-txt1{
+            font-size: 46px;
+            margin: 50px 0px 0px 94px;
+        }
+        .shop-now-txt2{
+            margin: 13px 0px 0px 111px;
+        }
+        .marccain-shop-now-btn{
+            margin: 64px 0px 0px 88px;
+            width: 180px;
+        }
+
+        .new-to-act-container{
+            margin-left: 19px;
+            width: auto;
+            height: auto;
+        }
+        .new-to-act-container img{
+            width: 355px;
+            height: 332px;
+        }
+        .new-to-act-container div:nth-child(2){
+            font-size: 30px;
+            margin: 56px 0px 0px 97.5px;
+        }
+        .new-to-act-container div:nth-child(3){
+            margin: 108px 0px 0px 66px;
+            text-align: center;
+            width: 223px;
+            height: 58px;
+        }
+        .act-register-btn{
+            width: 180px;
+            height: 59px;
+            margin: 236px 0px 0px 88px;
+        }
+
+
+        .browse-again-container{
+            margin: 355px 0px 0px 19px;
+            width: 355px;
+            height: 640px;
+            /* background-color: #F5F5F5; */
+        }
+        .browse-again-container div:nth-child(1){
+            /* position: absolute; */
+            text-align: left;
+            font-size: 16px;
+            margin: 46px 113px 0px 114px;
+        }
+        .browse-again-container div:nth-child(2){
+            /* position: absolute; */
+            font-size: 30px;
+            margin: 85px 0px 0px 15px;
+            text-align: center;
+            width: 326px;
+            height: 100px;
+        }
+        .browse-again-container div:nth-child(3){
+            position: absolute;
+            width: 231px;
+            margin: 213px 0px 0px 62px;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .browse-again-container .categorie button{
+            flex-basis: 100%;
+            width: 231px;
+            height: 79px;
+        }
+        .browse-again-container .categorie button:nth-child(1){
+            margin: 0px;
+        }
+        .browse-again-container .categorie button:nth-child(2){
+            margin: 20px 0px 0px 0px;
+        }
+        .browse-again-container .categorie button:nth-child(3){
+            margin: 20px 0px 0px 0px;
+        }
+        .browse-again-container .categorie button:nth-child(4){
+            margin: 20px 0px 0px 0px;
+        }
+
+
+        .eighth-container{
+            flex-wrap: wrap;
+        }
+        .delivery-logo{
+            margin: 53.5px 0px 0px 167px;
+            align-items: center;
+        }
+        .qlt-logo{
+            margin: 100px 0px 0px 179.5px;
+        }
+        .location-logo{
+            margin: 100px 0px 0px 184px
+        }
+        .location-logo img{
+            width: 27px;
+            height: 33px;
+        }
+        .apparel-container{
+            font-size: 18px; 
+            margin: 70px 0px 0px 75px;
+        }
+
+        .before-footer-container{
+            margin: 19px 0px 0px 22.5px;
+        }
+        .before-footer-container img{
+            width: 118px;
+            height: 106px;
+        }
+        .before-footer-container img:nth-child(4){
+            display: none;
+        }
+        .footer .footer-left{
+            display: none;
+        }
+        .footer .footer-right{
+            width: 400px;
+            height: 248px;
+        }
+
+
+        .footer .footer-right div:nth-child(1){
+            font-size: 30px;
+            margin: 28px 0px 0px 19px;
+        }
+        .footer-right .input-container{
+            margin: 109px 0px 0px 19px;
+            width: 355px;
+        }
+        .footer-right .input-container input{
+            width: 330px;
+        }
+          .social-icons .footer-text{
+            font-size: 11px;
+            display: flex;
+            flex-wrap: nowrap;
+            white-space:  nowrap;
+          }
+          .social-icons a:nth-child(1){
+            margin: 208px 0px 0px 19px;
+          }
+          .social-icons a:nth-child(2){
+            margin: 208px 0px 0px 40px;
+          }
+          .social-icons div:nth-child(3){
+            margin: 202px 19.5px 0px 161px;
+          }
     }
