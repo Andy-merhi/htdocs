@@ -426,18 +426,18 @@ margin: 133px 0px 0px 129px;
     position: relative;
     margin: 128.17px 0px 0px 151px;
 }
-.last-container .last-container-pic{
+.last-container img:nth-child(1){
     position: absolute;
     width: 1298px;
     height: 557px;
 }
-.last-container .logo{
+.last-container img:nth-child(2){
     position: absolute;
     margin:63px 0px 0px 501px;
     width: 296px;
     height: 160px;
 }
-.last-container .txt{
+.last-container div:nth-child(3){
     position: absolute;
     color: #FFFFFF;
     font-size: 46px;
@@ -593,27 +593,27 @@ margin: 133px 0px 0px 129px;
             width: 355px;
             height: 127px;
         }
-
-        /* General Styles */
+ 
         .seventh-container {
             flex-wrap: wrap;
             left: 19px;
             width: 355px;
-            height: 475px;
+            height: 1100px;
+            overflow: hidden;
+            top:0px;
         }
-        /* Marc Cain Bag Section */
         .seventh-container .div {
             width: 355px;
             height: 475px;
             top:37px
-        }
+        } 
         .seventh-container .div .first-img{
             padding: 0px;
             left: 19px;
             width: 355px;
             height: 475px;
         }
-        .seventh-container .div .first-img img{
+       .seventh-container .div .first-img img{
             width: 355px;
             height: 475px;
         }
@@ -628,10 +628,75 @@ margin: 133px 0px 0px 129px;
             position: absolute;
             padding: 320px 0px 0px 101px;
         }
-        .seventh-container .div .div-btn button {
+       .seventh-container .div .div-btn button {
             width: 193px;
             height: 55px;
             padding: 0;
             font-size: 16px;
+        }  
+       
+        .swiper {
+            margin-top: 20px; /* Reduce the gap manually */
+        }
+        .swiper-wrapper {
+            margin:0px auto;
+            padding: 0;
+        }
+        .swiper-slide img {
+            width: 234px;
+            height: 365px;   
+        }
+        .swiper-slide .slide-content {
+            position: relative; /* Changed from absolute */
+            margin: 62px 0px 0px 80px; /* Center within parent */
+            width: 100%; /* Ensure responsiveness */
+            height: 539px;
+        }
+        
+        /* Pagination */
+        #swiper-pagination {
+            margin-left: 80px;
+            transform: translateY(0px); 
+            width: 65px;
+
+        }
+        .swiper-pagination-bullet {
+            width: 5px;
+            height: 5px;
+        }
+        
+        .eighth-container{
+            margin-top: 77px;
+        }
+        .eighth-container div:nth-child(1){
+            margin-left: 19px;
+        }
+        .eighth-container .two-pics{
+            margin-left: 5px;
+        }
+        .eighth-container img{
+            width: 247px;
+            height: 410px;
+        }
+
+        .double-arrows{
+            margin-left: 19px;
+        }
+
+        .last-container{
+            margin: 62.17px 0px 0px 19px;
+        }
+        .last-container img:nth-child(1){
+            width: 355px;
+            height: 202px;
+        }
+        .last-container img:nth-child(2){
+            margin:33px 0px 0px 116px;
+            width: 124px;
+            height: 66px;
+        }
+        .last-container div:nth-child(3){
+            font-size: 30px;
+            margin: 124px 0px 0px 50px;
         }
 }
