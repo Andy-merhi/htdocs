@@ -13,7 +13,6 @@
     }
     .head { 
         display: flex;
-        width: 1600px;;
         height: 30px;
         margin-top: 0px;
         box-sizing: border-box;
@@ -24,10 +23,14 @@
         list-style-type: none;
         padding: 0;
         margin: 0; 
+        position: fixed;
+        background-color: #FFFFFF;
+        width: 1600px;
+        z-index: 1000;
     }
     .head li{
         cursor: pointer;
-        display: flex;                 /* Ensures that children are aligned correctly */
+        display: flex;                
         align-items: center; 
     }
 
@@ -38,6 +41,7 @@
     }
     .head li:nth-child(1){
         margin: 10px 0px 0px 151px;
+        text-align: left;
     }
     .head li:nth-child(2){
         margin-top: 6px;
@@ -50,31 +54,29 @@
         height: 11px;
     }
 
+    .head li:nth-child(3) img{
+        margin-right: 6px;
+    }
+
     .head li:nth-child(4){
         margin-top: 6px;
-        margin-left: 6px;
-        width: 47px;
-        height: 17px;
-    }
-    .head li:nth-child(5){
-        margin-top: 6px;
-        margin-left: 20px;
+        margin-left: 73px;
         width: 82px;
         height: 17px;
     }
-    .head li:nth-child(6){
+    .head li:nth-child(5){
         margin-top: 6px;
         margin-left: 22px;
         width: 44px;
         height: 17px;
     }
-    .head li:nth-child(7){
+    .head li:nth-child(6){
         margin-top: 6px;
         margin-left: 22px;
         width: 59px;
         height: 17px;
     }
-    .head li:nth-child(8){
+    .head li:nth-child(7){
         margin-top: 6px;
         margin-left: 22px;
         width: 63px;
@@ -83,9 +85,7 @@
     /* menu bar component */
     .menu{
         display: flex;
-        width: 1600px;
         height: 62px;
-        background-color: #F1F1F1;
         justify-content: space-between; /* Ensures space between elements */
         box-sizing: border-box;  
     }
@@ -94,6 +94,10 @@
         list-style-type: none;
         padding: 0;
         margin: 0; 
+        position: fixed;
+        z-index: 1000;
+        background-color: #F1F1F1;
+        width: 1600px;
     }
     .menu li{
         cursor: pointer;
@@ -132,14 +136,16 @@
         color: #FFFFFF;
         font-size: 14px;
     }
-
+    .menu li:nth-child(5) div{
+        padding: 3px 12px 2px 13px;
+    }
     .menu li:nth-child(6){
         margin: 15px 0px 15.45px 225.47px;
         width: 65px;
         height: 32px;
     }
     .menu li:nth-child(7){
-        margin: 18px 0px 18.54px 280px;
+        margin: 18px 0px 18.54px 290px;
         width: 24px;
         height: 25px;
     }
@@ -163,6 +169,7 @@
         border: none;
         outline: none;
         height: 30px;
+        width: 185px;
     }
     .menu li:nth-child(10) img{
         position: absolute;
@@ -185,7 +192,6 @@
         margin-top: 8px;
         display: flex; /* Flexbox for layout */
         justify-content: space-between; /* Evenly space the blocks */
-        position: relative;
     }
     
     .first-block > div {
@@ -201,43 +207,38 @@
     
     .first-block img {
         width: 100%;
-        height: 100%; /* Stretch images to fill the block */
-        object-fit: cover; /* Maintain image aspect ratio */
-        position: absolute; /* Position image within the block */
+        height: 100%;
+        object-fit: cover; 
+        position: absolute; 
         top: 0;
         left: 0;
-        z-index: 0; /* Ensure image is behind the text */
     }
     
     .first-block p {
         font-size: 63px;
         color: #FFFFFF;
-        position: relative; /* Relative to the parent block */
-        z-index: 1; /* Ensure text appears above the image */
-        text-align: center; /* Center align the text */
-        transform: translateY(28px); /* Adjust positioning */
+        position: relative;  
+        text-align: center; 
+        transform: translateY(28px); 
     }
     
     /* Hover effect for the Women block */
     .first-block > div:nth-child(1):hover img {
-        filter: brightness(0.58); /* Dim the image */
+        filter: brightness(0.58); 
     }
     
     /* Hover content styling for Women block */
     .first-block > div:nth-child(1):hover .women-on-hover {
-        display: block; /* Show the hover block */
+        display: block;
         align-items: center;
         justify-content: center;
-        flex-direction: column; /* Stack the button and image */
-        transition: ease-in-out 0.7s; /* Smooth fade-in */
-        opacity: 1;
-        transform: translateY(20px); /* Position the hover content below */
+        transition: ease-in-out 0.7s;
     }
     
     /* Move text on hover */
     .first-block div:nth-child(1):hover .hover-women-block p {
         transition: ease-in-out 0.3s;
-        transform: translateY(-240px); /* Move text up on hover */
+        transform: translateY(-190px); 
     }
     
     /* Hover block content is initially hidden */
@@ -248,17 +249,15 @@
         justify-content: center;
         top: 50%;
         left: 50%;
-        transform: translate(-50%, -50%); /* Center the content */
-        z-index: 2; /* Ensure hover content is above everything */
+        transform: translate(-50%, -50%);
         text-align: center;
     }
     
-    /* Image inside the hover block */
-    .first-block > div:nth-child(1) .women-on-hover img {
-        width: 86px;
-        height: 113px;
-        margin-bottom: 20px; /* Space between image and button */
+    .first-block > div:nth-child(1) .women-on-hover div:nth-child(1) p{
+        font-size: 16px;
+        margin: 0px 0px 25px 0px;
     }
+
     
     /* Button styling inside the hover block */
     .first-block > div:nth-child(1) .women-on-hover button {
@@ -269,7 +268,7 @@
         cursor: pointer;
         background-color: transparent;
         font-size: 16px;
-        margin-top: 20px; /* Move button below the image */
+        /* margin-top: 111px;  */
     }
     
     /* Align Men and New blocks consistently */
@@ -509,6 +508,8 @@
         position: absolute;
         margin: 477px 0px 0px 691.42px;
         display: none;
+        width: 31px;
+        height: 8px;
     }
     #third-div-hover:hover #third-div-pic2{
         filter: brightness(0.52);

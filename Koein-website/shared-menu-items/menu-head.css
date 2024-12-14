@@ -1,0 +1,171 @@
+.head { 
+    display: flex;
+    height: 30px;
+    margin-top: 0px;
+    box-sizing: border-box;
+    justify-content: space-between; /* Ensures space between elements */
+}
+.head ul{
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0; 
+    position: fixed;
+    background-color: #FFFFFF;
+    width: 1600px;
+    z-index: 1000;
+}
+.head li{
+    cursor: pointer;
+    display: flex;                 /* Ensures that children are aligned correctly */
+    align-items: center; 
+}
+
+.image-noun-shipping, .txt1, .noun-store-img
+, .p-stores, .p-stores, .p-newsLetter, .p-About, .p-contact, .p-giftCard{
+    
+    font-size: 13px;
+}
+.head li:nth-child(1){
+    margin: 10px 0px 0px 151px;
+}
+.head li:nth-child(2){
+    margin-top: 6px;
+    margin-left: 10px;
+    font-size: 13px;
+}
+.head li:nth-child(3){
+    margin: 9px 0px 0px 566px;
+    width: 11px;
+    height: 11px;
+}
+
+.head li:nth-child(4){
+    margin-top: 6px;
+    margin-left: 6px;
+    width: 47px;
+    height: 17px;
+}
+.head li:nth-child(5){
+    margin-top: 6px;
+    margin-left: 20px;
+    width: 82px;
+    height: 17px;
+}
+.head li:nth-child(6){
+    margin-top: 6px;
+    margin-left: 22px;
+    width: 44px;
+    height: 17px;
+}
+.head li:nth-child(7){
+    margin-top: 6px;
+    margin-left: 22px;
+    width: 59px;
+    height: 17px;
+}
+.head li:nth-child(8){
+    margin-top: 6px;
+    margin-left: 22px;
+    width: 63px;
+    height: 17px;
+}
+/* menu bar component */
+.menu{
+    display: flex;
+    height: 62px;
+    justify-content: space-between; /* Ensures space between elements */
+    box-sizing: border-box;  
+}
+.menu ul{
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0; 
+    position: fixed;
+    z-index: 1000;
+    background-color: #F1F1F1;
+    width: 1600px;
+}
+.menu li{
+    cursor: pointer;
+    display: flex;                 /* Ensures that children are aligned correctly */
+    align-items: center;  
+}
+.menu li:nth-child(1){
+    margin: 21px 0px 22px 151px;
+    width: 33px;
+    height: 19px;
+    font-size: 14px;
+}
+.menu li:nth-child(2){
+    margin: 21px 0px 22px 32px;
+    width: 32px;
+    height: 19px;
+    font-size: 14px;
+}
+.menu li:nth-child(3){
+    margin: 21px 0px 22px 31px;
+    width: 57px;
+    height: 19px;
+    font-size: 14px;
+}
+.menu li:nth-child(4){
+    margin: 21px 0px 22px 32px;
+    width: 92px;
+    height: 19px;
+    font-size: 14px;
+}
+.menu li:nth-child(5){
+    background-color: #000000;
+    margin: 19px 0px 19px 25px;
+    width: 57px;
+    height: 24px;
+    color: #FFFFFF;
+    font-size: 14px;
+}
+
+.menu li:nth-child(6){
+    margin: 15px 0px 15.45px 225.47px;
+    width: 65px;
+    height: 32px;
+}
+.menu li:nth-child(7){
+    margin: 18px 0px 18.54px 280px;
+    width: 24px;
+    height: 25px;
+}
+.menu li:nth-child(8){
+    margin: 21px 0px 21.26px 27.8px;
+    width: 17px;
+    height: 19px;
+}
+.menu li:nth-child(9){
+    margin: 21.5px 0px 20.81px 27.8px;
+    width: 23px;
+    height: 20px;
+}
+.menu li:nth-child(10){
+    margin: 16px 0px 16px 21.26px;
+    width: 185px;
+    position: relative;
+}
+.menu li:nth-child(10) input{
+    position: absolute;
+    border: none;
+    outline: none;
+    height: 30px;
+}
+.menu li:nth-child(10) img{
+    position: absolute;
+    margin: 9px 8.74px 10.62px 162px;
+    width: 12px;
+    height: 12px;
+    opacity: 0.45;
+}
+/* Placeholder text styling */
+.menu li:nth-child(10) input::placeholder {
+    color: black;                      
+    font-size: 14px;                   
+    opacity: 1;                        
+}
