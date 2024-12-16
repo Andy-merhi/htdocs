@@ -4,15 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="home.css">
-    <!-- <link rel="stylesheet" href="../shared-menu-items/menu-head.css"> -->
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"> -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <title>Home</title>
 </head>
 <body>
-
-    <!-- <iframe src="../shared-menu-items/menu-head.html"  frameborder="0"></iframe> -->
-
 
     <div class="head">
         <ul>
@@ -28,7 +24,212 @@
     </div>
 
     <div class="menu">
-        <ul>
+        <span id="menu-burger-icon"><img src="../images/menu-burger.svg" alt="menu" style="margin: 0;"></span>
+        <div class="menu-burger" id="menu-burger-items">
+            <div>
+                <img src="../images/Icon feather-user.svg" alt="profile">
+                <img src="../images/Icon feather-heart.svg" alt="heart">
+                <img src="../images/Icon ionic-ios-close.svg" alt="x" id="menu-burger-exit">
+                
+                
+                    <ul class="menu-burger-ul">
+                        <li>NEW</li>
+                        <li>MEN</li>
+                        <li id="menu-burger-women">WOMEN</li>
+                        <li>COLLECTIONS</li>
+                        <li><div>SALE</div></li>
+                    </ul>
+            </div>
+
+            <div>     
+                <ul>
+                    <li style="display: inline-flex;">
+                        <img src="../images/noun-store-5320839.svg" alt="store alt">
+                       <div style="height: 17px;">STORES</div> 
+                    </li>
+                    <li>NEWSLETTER</li>
+                    <li>ABOUT</li>
+                    <li>CONTACT</li>
+                    <li>GIFTCARD</li>
+                </ul>
+            </div>
+            
+            <div>
+                <ul>
+                    <li>COOKIES POLICY</li>
+                    <li>PRIVACY POLICY</li>
+                    <li>TERMS & CONDITIONS</li>
+                    <li>RETURNS, REFUNDS & STORES CREDITS</li>
+                    <li>REFERRERS TRACKING & COMMISION</li>
+                </ul>
+            </div>
+        </div>
+
+        <div  class="menu-1" id="menu-1">
+            <div>
+                <img src="../images/Icon ionic-ios-arrow-back.svg" alt="arrow alt" id="menu-1-back-arrow">
+                <div style="display: flex;">WOMEN <span>/ CLOTHING</span></div>
+            </div>
+            <ul>
+                <li>New</li>
+                <li id="menu-1-clothing">Clothing</li>
+                <li>Shoes</li>
+                <li>Jewelry</li>
+                <li>Accessorie</li>
+                <li>Sports</li>
+                <li>Sale</li>
+                <li>Brands</li>
+                <li>Fall Season</li>
+            </ul>
+        </div>
+
+        <div id="menu-1-overlay">
+            <!-- Clothing Section -->
+            <div class="section">
+                <div class="section-header">Clothing</div>
+                <div class="menu-clothing">
+                    <div class="clothing-category">
+                        <ul>
+                            <li>Blazer</li>
+                            <li>Blouses & Tunics</li>
+                            <li>Business Combinations</li>
+                            <li>Pants</li>
+                            <li>Jackets</li>
+                            <li>Jeans</li>
+                            <li>Jumpsuits</li>
+                            <li>Dresses</li>
+                            <li>Coats</li>
+                        </ul>
+                    </div>
+                    <div class="clothing-category">
+                        <ul>
+                            <li>Skirts</li>
+                            <li>Shirt</li>
+                            <li>Sportswear</li>
+                            <li>Rope</li>
+                            <li>Socks</li>
+                            <li>Sweatshirts & Sweat Jackets</li>
+                            <li>Costumes</li>
+                            <li>Laundry</li>
+                            <li>West</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        
+            <!-- Top Brands and Shop By Look Section -->
+            <div class="row">
+                <div class="section top-brands">
+                    <div class="section-header">Top Brands</div>
+                    <ul>
+                        <li>MARCCAIN</li>
+                        <li>JOOP</li>
+                        <li>DRYKORN</li>
+                    </ul>
+                </div>
+        
+                <div class="section shop-by-look">
+                    <div class="section-header">Shop By Look</div>
+                    <ul>
+                        <li>Call It Pink!</li>
+                        <li>Classy Twist</li>
+                        <li>Though Girls!</li>
+                        <li>Soft Power</li>
+                        <li>Leo Meets Forest</li>
+                        <li>New Chili Club</li>
+                        <li>New Black & Light</li>
+                        <li>New Comfy</li>
+                        <li>Softness</li>
+                    </ul>
+                </div>
+            </div>
+        
+            <!-- Overlay Images Section -->
+            <div class="overlay-images">
+                <div class="image-card">
+                    <img src="../women-page/images/overlay-pic1.png" alt="Winter Looks">
+                    <div class="image-caption">Winter Looks</div>
+                </div>
+                <div class="image-card">
+                    <img src="../women-page/images/overlay-pic2.png" alt="Bestsellers">
+                    <div class="image-caption">Bestsellers</div>
+                </div>
+            </div>
+        </div>
+        
+        
+
+
+
+
+
+
+
+        <!-- <div id="menu-1-overlay">
+            <div class="div1">Clothing</div>
+            <div class="menu-1-overlay-clothing">
+                <div class="clothing-div1">
+                    <ul>
+                        <li>Blazer</li>
+                        <li>Blouses & Tunics</li>
+                        <li>Business Combinations</li>
+                        <li>Pants</li>
+                        <li>Jackets</li>
+                        <li>Jeans</li>
+                        <li>Jumpsuits</li>
+                        <li>Dresses</li>
+                        <li>Coats</li>
+                    </ul>
+                </div> 
+                <div class="clothing-div2">
+                    <ul>    
+                        <li>Skirts</li>
+                        <li>Shirt</li>
+                        <li>Sportswear</li>
+                        <li>Rope</li>
+                        <li>Socks</li>
+                        <li>Sweatshirts & Sweat</li>
+                        <li>Costumes</li>
+                        <li>Laundry</li>
+                        <li>West</li>
+                    </ul>
+                </div> 
+            </div>
+                <div class="top-brands-div">
+                    <div class="div2">Top Brands</div>
+                    <ul>
+                        <li>MARCCAIN</li>
+                        <li>JOOP</li>
+                        <li>DRYKORN</li>
+                    </ul>
+                </div>
+                <div class="shop-by-look">
+                    <div class="div3">Shop By look</div>
+                    <ul>
+                        <li>Call It Pink!</li>
+                        <li>Classy Twist</li>
+                        <li>Though Girls!</li>
+                        <li>Soft Power</li>
+                        <li>Leo Meets Forest</li>
+                        <li>New Chili Club</li>
+                        <li>New Black & Light</li>
+                        <li>New Comfy</li>
+                        <li>Softness</li>
+                        
+                    </ul>
+                </div>
+    
+                <div class="overlay-pic1">
+                    <img src="images/overlay-pic1.png" alt="pic alt">
+                    <div>WINTER LOOKS</div>
+                </div>
+                <div class="overlay-pic2">
+                    <img src="images/overlay-pic2.png" alt="pic alt">
+                    <div>BESTSELLERS</div>
+                </div>
+        </div> -->
+        
+        <ul class="reg-ul">
             <li><div>NEW</div></li>
             <li><div>MEN</div></li>
             <li><div>WOMEN</div></li>
@@ -118,22 +319,22 @@
                 <div class="swiper-item">
                     <img src="../images/swiper-pic1.png" alt="no image" class="swiper-image">
                     <div class="swiper-text">MARC KAIN <br> "RETHINK TOGETHER" SHOULDER BAG</div>
-                    <div class="swiper-price">510 USD</div>
+                    <div class="USD">510 USD</div>
                 </div>
                 <div class="swiper-item">
                     <img src="../images/swiper-pic2.png" alt="no image" class="swiper-image">
                     <div class="swiper-text">MARC KAIN <br> "RETHINK TOGETHER" SHOULDER BAG</div>
-                    <div class="swiper-price">510 USD</div>
+                    <div class="USD">510 USD</div>
                 </div>
                 <div class="swiper-item">
                     <img src="../images/swiper-pic3.png" alt="no image" class="swiper-image">
                     <div class="swiper-text">MARC KAIN <br> "RETHINK TOGETHER" SHOULDER BAG</div>
-                    <div class="swiper-price">510 USD</div>
+                    <div class="USD">510 USD</div>
                 </div>
                 <div class="swiper-item">
                     <img src="../images/swiper-pic4.png" alt="no image" class="swiper-image">
                     <div class="swiper-text">MARC KAIN <br> "RETHINK TOGETHER" SHOULDER BAG</div>
-                    <div class="swiper-price">510 USD</div>
+                    <div class="USD">510 USD</div>
                 </div>
             </div>
         </div>
@@ -143,22 +344,22 @@
                 <div class="swiper-item">
                     <img src="../images/swiper-pic1.png" alt="no image" class="swiper-image">
                     <div class="swiper-text">MARC KAIN <br> "RETHINK TOGETHER" SHOULDER BAG</div>
-                    <div class="swiper-price">510 USD</div>
+                    <div class="USD">510 USD</div>
                 </div>
                 <div class="swiper-item">
                     <img src="../images/swiper-pic2.png" alt="no image" class="swiper-image">
                     <div class="swiper-text">MARC KAIN <br> "RETHINK TOGETHER" SHOULDER BAG</div>
-                    <div class="swiper-price">510 USD</div>
+                    <div class="USD">510 USD</div>
                 </div>
                 <div class="swiper-item">
                     <img src="../images/swiper-pic3.png" alt="no image" class="swiper-image">
                     <div class="swiper-text">MARC KAIN <br> "RETHINK TOGETHER" SHOULDER BAG</div>
-                    <div class="swiper-price">510 USD</div>
+                    <div class="USD">510 USD</div>
                 </div>
                 <div class="swiper-item">
                     <img src="../images/swiper-pic4.png" alt="no image" class="swiper-image">
                     <div class="swiper-text">MARC KAIN <br> "RETHINK TOGETHER" SHOULDER BAG</div>
-                    <div class="swiper-price">510 USD</div>
+                    <div class="USD">510 USD</div>
                 </div>
             </div>
         </div>
@@ -315,22 +516,22 @@
                 <div class="swiper-item">
                     <img src="../images/men-swiper-pic1.png" alt="no image" class="swiper-image">
                     <div class="swiper-text">MARC KAIN <br> "RETHINK TOGETHER" SHOULDER BAG</div>
-                    <div class="swiper-price">510 USD</div>
+                    <div class="USD">510 USD</div>
                 </div>
                 <div class="swiper-item">
                     <img src="../images/men-swiper-pic2.png" alt="no image" class="swiper-image">
                     <div class="swiper-text">MARC KAIN <br> "RETHINK TOGETHER" SHOULDER BAG</div>
-                    <div class="swiper-price">510 USD</div>
+                    <div class="USD">510 USD</div>
                 </div>
                 <div class="swiper-item">
                     <img src="../images/men-swiper-pic3.png" alt="no image" class="swiper-image">
                     <div class="swiper-text">MARC KAIN <br> "RETHINK TOGETHER" SHOULDER BAG</div>
-                    <div class="swiper-price">510 USD</div>
+                    <div class="USD">510 USD</div>
                 </div>
                 <div class="swiper-item">
                     <img src="../images/men-swiper-pic4.png" alt="no image" class="swiper-image">
                     <div class="swiper-text">MARC KAIN <br> "RETHINK TOGETHER" SHOULDER BAG</div>
-                    <div class="swiper-price">510 USD</div>
+                    <div class="USD">510 USD</div>
                 </div>
             </div>
         </div>
@@ -340,22 +541,22 @@
                 <div class="swiper-item">
                     <img src="../images/men-swiper-pic1.png" alt="no image" class="swiper-image">
                     <div class="swiper-text">MARC KAIN <br><br> "RETHINK TOGETHER" SHOULDER BAG</div>
-                    <div class="swiper-price">510 USD</div>
+                    <div class="USD">510 USD</div>
                 </div>
                 <div class="swiper-item">
                     <img src="../images/men-swiper-pic2.png" alt="no image" class="swiper-image">
                     <div class="swiper-text">MARC KAIN <br> "RETHINK TOGETHER" SHOULDER BAG</div>
-                    <div class="swiper-price">510 USD</div>
+                    <div class="USD">510 USD</div>
                 </div>
                 <div class="swiper-item">
                     <img src="../images/men-swiper-pic3.png" alt="no image" class="swiper-image">
                     <div class="swiper-text">MARC KAIN <br> "RETHINK TOGETHER" SHOULDER BAG</div>
-                    <div class="swiper-price">510 USD</div>
+                    <div class="USD">510 USD</div>
                 </div>
                 <div class="swiper-item">
                     <img src="../images/men-swiper-pic4.png" alt="no image" class="swiper-image">
                     <div class="swiper-text">MARC KAIN <br> "RETHINK TOGETHER" SHOULDER BAG</div>
-                    <div class="swiper-price">510 USD</div>
+                    <div class="USD">510 USD</div>
                 </div>
             </div>
         </div>
