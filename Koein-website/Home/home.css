@@ -10,6 +10,7 @@
     body{
         margin: 0px;
         padding: 0px;
+        /* overflow: hidden; */
     }
     .head { 
         display: flex;
@@ -324,49 +325,6 @@
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    /* #menu-1-overlay{
-        width: 393px;
-        z-index: 1000000;
-        margin-left: 19px;
-    }
-    #menu-1-overlay .div1{
-        font-size: 12px;
-    }
-    #menu-1-overlay .menu-1-overlay-clothing{
-        display: flex;
-    }
-    #menu-1-overlay ul{
-        list-style-type: none;
-        padding: 0;
-        margin: 15px 0px 0px 0px;
-        border-top: 1px solid black ;
-    }
-    #menu-1-overlay .menu-1-overlay-clothing ul li{
-         font-size: 12px;
-         font-weight:400;
-         margin-top: 15px;
-    }
-    #menu-1-overlay .menu-1-overlay-clothing .clothing-div-1 ul{
-        margin-top: 15px;
-    } */
-
     .menu .reg-ul{
         display: flex;
         list-style-type: none;
@@ -471,6 +429,7 @@
         margin-top: 8px;
         display: flex; /* Flexbox for layout */
         justify-content: space-between; /* Evenly space the blocks */
+        overflow:;
     }
     
     .first-block > div {
@@ -1131,6 +1090,10 @@
     
 
       @media (max-width: 394px) {
+        html,body{
+            width: 393px;
+            overflow-x: hidden;
+        }
         .head ul{
             width: 393px;
         }
@@ -1203,14 +1166,18 @@
         }
 
 
-        
+        .wrapper {
+            display: flex;
+          }
         .first-block {
             width: 1065px;
             height: 571px;
-            /* flex-direction: column; Stack blocks vertically */
+            display: flex;           /* Flexbox to align items horizontally */
+            overflow-x: auto;        /* Enable horizontal scrolling */
+            white-space: nowrap;     /* Prevent wrapping */
         }
         .first-block div{
-            width: 393px;
+            flex: 0 0 356px;         /* Fixed width for each block */
         }
         .first-block div:nth-child(1){
             margin-left: 19px;
@@ -1226,6 +1193,20 @@
             font-size: 30px;
             transform: translateY(18px);
         }
+        /* Hover content styling for Women block */
+    .first-block > div:nth-child(1):hover .women-on-hover {
+        display: none;
+    }
+    
+    /* Move text on hover */
+    .first-block div:nth-child(1):hover .hover-women-block p {
+        transition: none;
+        transform: translateY(0); 
+    }
+    /* Hover effect for the Women block */
+    .first-block > div:nth-child(1):hover img {
+        filter: brightness(1); 
+    }
 
         #New-In-Women{
             margin-top: 56px;
@@ -1342,10 +1323,11 @@
         }
 
         .third-div div:nth-child(1) div{
-            margin-top: 221px; 
-            margin-left: 100px;
+            margin: 221px 0px 0px 100px;
             font-size: 22px;
             color: #FFFFFF;
+            width: fit-content;
+            height: fit-content;
         }
         .third-div div:nth-child(2) img:nth-child(1){
             width: 393px;
@@ -1355,11 +1337,11 @@
             position: absolute; 
         }
         .third-div div:nth-child(2) div{
-            position: absolute;
-            margin-top: 221px; 
-            margin-left: 133px;
+            margin: 221px 0px 0px 133px;
             font-size: 22px;
             color: #FFFFFF;
+            width: fit-content;
+            height: fit-content;
         }
         
 
@@ -1405,6 +1387,9 @@
         }
         .shop-the-look-items .items-div1, .items-div2{
             display: flex;
+            width: 393px;
+            flex-wrap: nowrap;
+            overflow-x: auto;
         }
         .shop-the-look-items .items-div1 div:nth-child(1){
             width: 207px; 
