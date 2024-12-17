@@ -445,21 +445,27 @@ margin: 133px 0px 0px 129px;
 }
 
 @media (max-width: 394px){
+    html,body{
+        width: 393px;
+        overflow-x: hidden;
+    }
     .slogan{
+        margin: 20px 0px 0px 0px;
         font-size: 12px;
     }
     .women-nav{
         display: none;
     }
     
-    .first-div{
+        .first-div{
         width: 393px;
         height: 781px;
+        overflow-x: auto;
         }
         .first-div img{
-            margin-left: -528px;   
-            height: 781px;  
-         }
+        margin-left: -528px;   
+        height: 781px;  
+        }
         .first-div div{
         font-size: 30px;
         margin: 111px 0px 0px 19px;
@@ -667,6 +673,8 @@ margin: 133px 0px 0px 129px;
         
         .eighth-container{
             margin-top: 77px;
+            overflow-x: auto;
+            white-space: nowrap;
         }
         .eighth-container div:nth-child(1){
             margin-left: 19px;
