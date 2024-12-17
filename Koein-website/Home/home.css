@@ -422,24 +422,141 @@
     }
 
 
-    .first-block {
+    /* General Styling */
+.first-block {
+    height: 837px;
+    width: 1600px;
+    margin-top: 8px;
+    display: flex; /* Flexbox for layout */
+    justify-content: space-between; /* Space blocks evenly */
+}
+
+/* Div blocks within first-block */
+.first-block > div {
+    position: relative;
+    width: 33%; /* Default: divide container into 3 equal blocks */
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+/* Image styling */
+.first-block img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+
+/* Text Styling */
+.first-block p {
+    font-size: 63px;
+    color: #FFFFFF;
+    position: relative;
+    text-align: center;
+    transform: translateY(28px);
+}
+
+/* Hover Effects */
+.first-block > div:nth-child(1):hover img {
+    filter: brightness(0.58);
+}
+
+.first-block > div:nth-child(1):hover .women-on-hover {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: ease-in-out 0.3s;
+    /* margin-top: 111px; */
+}
+
+.first-block div:nth-child(1):hover .hover-women-block p {
+    transition: ease-in-out 0.3s;
+    transform: translateY(-190px);
+}
+
+.first-block > div:nth-child(1) .women-on-hover {
+    display: none;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center;
+    justify-content: center; 
+    position: absolute;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Styling for p elements inside women-on-hover */
+.first-block > div:nth-child(1) .women-on-hover div:nth-child(1) p {
+    font-size: 16px; /* Adjust font size */
+    margin-top: 10px; /* Remove default margins */
+}
+
+/* Button styling inside hover block */
+.first-block > div:nth-child(1) .women-on-hover button {
+    width: 235px;
+    height: 67px;
+    color: #FFFFFF;
+    border: 1px solid #FFFFFF;
+    background-color: transparent;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 111px; /* Remove default margins */
+}
+
+/* Adjust Men and New Blocks */
+.first-block > div:nth-child(2),
+.first-block > div:nth-child(3) {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Image Positioning */
+.first-block > div:nth-child(2) img,
+.first-block > div:nth-child(3) img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+    /* .first-block {
         height: 837px;
         width: 1600px;
         margin-top: 8px;
-        display: flex; /* Flexbox for layout */
-        justify-content: space-between; /* Evenly space the blocks */
-        overflow:;
+        display: flex; 
+        justify-content: space-between; 
     }
     
     .first-block > div {
         position: relative;
-        width: 33%; /* Divide the container into three equal blocks */
-        height: 100%; /* Match the height of the container */
+        width: 33%;
+        height: 100%; 
         display: flex;
-        flex-direction: column; /* Stack items vertically */
-        justify-content: center; /* Center items vertically */
-        align-items: center; /* Center items horizontally */
-        overflow: hidden; /* Ensure content stays within bounds */
+        flex-direction: column;
+        justify-content: center; 
+        align-items: center; 
+        overflow: hidden; 
     }
     
     .first-block img {
@@ -459,12 +576,10 @@
         transform: translateY(28px); 
     }
     
-    /* Hover effect for the Women block */
     .first-block > div:nth-child(1):hover img {
         filter: brightness(0.58); 
     }
     
-    /* Hover content styling for Women block */
     .first-block > div:nth-child(1):hover .women-on-hover {
         display: block;
         align-items: center;
@@ -472,13 +587,11 @@
         transition: ease-in-out 0.7s;
     }
     
-    /* Move text on hover */
     .first-block div:nth-child(1):hover .hover-women-block p {
         transition: ease-in-out 0.3s;
         transform: translateY(-190px); 
     }
     
-    /* Hover block content is initially hidden */
     .first-block > div:nth-child(1) .women-on-hover {
         display: none;
         position: absolute;
@@ -496,7 +609,6 @@
     }
 
     
-    /* Button styling inside the hover block */
     .first-block > div:nth-child(1) .women-on-hover button {
         width: 235px;
         height: 67px;
@@ -505,11 +617,8 @@
         cursor: pointer;
         background-color: transparent;
         font-size: 16px;
-        /* margin-top: 111px;  */
     }
     
-    /* Align Men and New blocks consistently */
-    .first-block > div:nth-child(2),
     .first-block > div:nth-child(3) {
         position: relative;
         display: flex;
@@ -527,7 +636,7 @@
         top: 0;
         left: 0;
         z-index: 0;
-    }
+    } */
     #New-In-Women{
         margin-top: 147px;
         margin-left: 638px;
@@ -1168,44 +1277,38 @@
         .wrapper {
             display: flex;
           }
-        .first-block {
-            width: 1065px;
-            height: 571px;
-            display: flex;           /* Flexbox to align items horizontally */
-            overflow-x: auto;        /* Enable horizontal scrolling */
-            white-space: nowrap;     /* Prevent wrapping */
+
+          .first-block {
+            width: 100%; /* Match viewport width */
+            height: 571px; /* Adjusted height */
+            display: flex;
+            overflow-x: auto; /* Enable horizontal scrolling */
+            white-space: nowrap; /* Prevent wrapping */
         }
-        .first-block div{
-            flex: 0 0 356px;         /* Fixed width for each block */
+    
+        .first-block > div {
+            flex: 0 0 356px; /* Fixed width for each block */
+            /* height: 100%; Ensure consistent height */
         }
+        
         .first-block div:nth-child(1){
             margin-left: 19px;
         }
         .first-block div:nth-child(2), .first-block div:nth-child(3){
             margin-left: 3px;
         }
+    
         .first-block img {
             width: 356px;
             height: 571px;
+            object-fit: cover;
         }
-        .first-block p {
-            font-size: 30px;
-            transform: translateY(18px);
-        }
-        /* Hover content styling for Women block */
-    .first-block > div:nth-child(1):hover .women-on-hover {
-        display: none;
-    }
     
-    /* Move text on hover */
-    .first-block div:nth-child(1):hover .hover-women-block p {
-        transition: none;
-        transform: translateY(0); 
-    }
-    /* Hover effect for the Women block */
-    .first-block > div:nth-child(1):hover img {
-        filter: brightness(1); 
-    }
+        .first-block p {
+            font-size: 30px; /* Adjust text size */
+            transform: translateY(0); /* Center the text */
+        }
+    
 
         #New-In-Women{
             margin-top: 56px;

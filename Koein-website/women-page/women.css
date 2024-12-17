@@ -661,7 +661,7 @@ margin: 133px 0px 0px 129px;
         
         /* Pagination */
         #swiper-pagination {
-            margin-left: 0px;
+            margin-left: 80px;
             transform: translateY(0px); 
             width: 65px;
             
