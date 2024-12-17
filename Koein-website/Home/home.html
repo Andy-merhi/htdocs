@@ -22,30 +22,52 @@
             <li><div class="p-giftCard">GIFTCARD</div></li>
         </ul>
     </div>
-
+    
     <div class="menu">
-        <span id="menu-burger-icon"><img src="../images/menu-burger.svg" alt="menu" style="margin: 0;"></span>
+        <span id="menu-burger-icon"><img src="../images/menu-burger.svg" alt="menu"></span>
         <div class="menu-burger" id="menu-burger-items">
-            <div>
-                <img src="../images/Icon feather-user.svg" alt="profile">
-                <img src="../images/Icon feather-heart.svg" alt="heart">
-                <img src="../images/Icon ionic-ios-close.svg" alt="x" id="menu-burger-exit">
-                
-                
-                    <ul class="menu-burger-ul">
-                        <li>NEW</li>
-                        <li>MEN</li>
-                        <li id="menu-burger-women">WOMEN</li>
-                        <li>COLLECTIONS</li>
-                        <li><div>SALE</div></li>
-                    </ul>
+            <!-- Header Section -->
+            <div class="menu-section header">
+                <ul class="menu-header">
+                    <li id="profile-icon" class="menu-header-item">
+                        <img src="../images/Icon feather-user.svg" alt="profile">
+                        <!-- Profile Dropdown -->
+                        <div class="profile-container" id="profile-container">
+                            <div class="profile-pop-up">
+                                <ul>
+                                    <li>Joyce A.</li>
+                                    <li>EDIT ACCOUNT</li>
+                                    <li>ADDRESS BOOK</li>
+                                    <li>ORDER HISTORY</li>
+                                    <li>LIKED ITEMS</li>
+                                    <li>LOGOUT</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    
+                    <li class="menu-header-item">
+                        <img src="../images/Icon feather-heart.svg" alt="heart">
+                    </li>
+                    <li class="menu-header-item close-icon">
+                        <img src="../images/Icon ionic-ios-close.svg" alt="close" id="menu-burger-exit">
+                    </li>
+                </ul>
+                <ul class="menu-links">
+                    <li>NEW</li>
+                    <li>MEN</li>
+                    <li id="menu-burger-women">WOMEN</li>
+                    <li>COLLECTIONS</li>
+                    <li><div class="sale-tag">SALE</div></li>
+                </ul>
             </div>
-
-            <div>     
-                <ul>
-                    <li style="display: inline-flex;">
-                        <img src="../images/noun-store-5320839.svg" alt="store alt">
-                       <div style="height: 17px;">STORES</div> 
+        
+            <!-- Middle Section -->
+            <div class="menu-section middle">
+                <ul class="info-links">
+                    <li>
+                        <img src="../images/noun-store-5320839.svg" alt="store">
+                        <span>STORES</span>
                     </li>
                     <li>NEWSLETTER</li>
                     <li>ABOUT</li>
@@ -53,22 +75,24 @@
                     <li>GIFTCARD</li>
                 </ul>
             </div>
-            
-            <div>
-                <ul>
+        
+            <!-- Footer Section -->
+            <div class="menu-section footer">
+                <ul class="policy-links">
                     <li>COOKIES POLICY</li>
                     <li>PRIVACY POLICY</li>
                     <li>TERMS & CONDITIONS</li>
                     <li>RETURNS, REFUNDS & STORES CREDITS</li>
-                    <li>REFERRERS TRACKING & COMMISION</li>
+                    <li>REFERRERS TRACKING & COMMISSION</li>
                 </ul>
             </div>
         </div>
+        
 
         <div  class="menu-1" id="menu-1">
             <div>
                 <img src="../images/Icon ionic-ios-arrow-back.svg" alt="arrow alt" id="menu-1-back-arrow">
-                <div style="display: flex;">WOMEN <span>/ CLOTHING</span></div>
+                <div style="display: flex;">WOMEN</div>
             </div>
             <ul>
                 <li>New</li>
@@ -85,6 +109,10 @@
 
         <div id="menu-1-overlay">
             <!-- Clothing Section -->
+            <div class="header">
+                <img src="../images/Icon ionic-ios-arrow-back.svg" alt="arrow alt" id="menu-1-overlay-back-arrow">
+                <div style="display: flex;">WOMEN / CLOTHING</div>
+            </div>
             <div class="section">
                 <div class="section-header">Clothing</div>
                 <div class="menu-clothing">

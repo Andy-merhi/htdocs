@@ -43,3 +43,16 @@
     document.getElementById('menu-1').style.display = 'none';
     document.getElementById('menu-1-overlay').style.display = 'block';
   });
+
+    // Function to handle menu-burger click
+    document.getElementById('menu-1-overlay-back-arrow').addEventListener('click', function() {
+    // Display something else
+    document.getElementById('menu-1-overlay').style.display = 'none';
+    document.getElementById('menu-1').style.display = 'block';
+  });
+
+    // Function to handle menu-burger click
+    document.getElementById('profile-icon').addEventListener('click', function() {
+     
+      document.getElementById('profile-container').style.display = 'block';
+    });
