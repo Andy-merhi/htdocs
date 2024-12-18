@@ -6,7 +6,15 @@ body{
     display: flex;
     margin: 0;
     padding: 0;
-    width: 1600px;
+}
+.USD{
+    font-size: 12px;
+    font-weight:500;
+    margin-top: 8px;
+}
+.slogan{
+    font-size: 13px;
+    margin-top: 13px;
 }
 aside{
     margin-left: 31.5px;
@@ -32,7 +40,6 @@ aside{
     margin: 45px 0px 0px 0px;
 }
 .filter-list li .head{
-    /* border-bottom: 1px solid #707070; */
     padding-bottom: 18.5px;
     display: flex;
     justify-content: space-between;
@@ -199,8 +206,8 @@ aside{
     left: 0;
     background: none;
     pointer-events: none;
-    -webkit-appearance: none;
-    -moz-appearance: none;
+    /* -webkit-appearance: none;
+    -moz-appearance: none; */
   }
   
   input[type="range"]::-webkit-slider-thumb {
@@ -262,12 +269,138 @@ aside{
 }
   
 .content{
-    width: 1326.5px;
-    margin-top: 20px;
+    margin: 20px 0px 0px 29.5px;
 }
 
-.content img:nth-child(1){
+.first-div{
+    position: relative;
     width: 1146px;
     height: 234px;
-    margin: 0px 0px 0px 29.5px;
+}
+.first-div img:nth-child(1){
+    width: 1146px;
+    height: 234px;
+    position: absolute;
+}
+.first-div div:nth-child(2){
+    position: absolute;
+    box-sizing: border-box;
+    white-space: nowrap;
+    color:#FFFFFF;
+    font-size: 45px;
+    margin: 87px 0px 0px 48px;
+}
+
+.second-div{
+    top:0;
+    display: flex;
+    position: relative;
+}
+.second-div img:nth-child(1){
+    width: 218px;
+    height: 120px;
+    margin-top: 58px;
+}
+.second-div img:nth-child(2){
+    width: 150px;
+    height: 150px;
+    margin: 43px 0px 0px 80px;
+}
+.second-div img:nth-child(3){
+    width: 162px;
+    height: 55px;
+    margin: 91px 0px 0px 107px;
+}
+
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 56px;
+}
+.cards .card-item{
+    margin-bottom: 52px;
+    margin-right: 48px;
+    position: relative;
+}
+
+.cards img{
+    width:351px;
+    height: 547px;
+}
+.card-item .tag{
+    position: absolute;
+    width: 64px;
+    height: 24px;
+    background-color: #000;
+    color: #FFFFFF;
+    padding: 4px 17px;
+    font-size: 12px;
+    box-sizing: border-box;
+}
+.card-item .rollover{
+    position: absolute;
+    background-color: white;
+    z-index: 100;
+    width: 351px;
+    height: 325px;
+    top: 50%;
+    box-shadow: 0px 3px 6px #00000029;
+}
+.reaction-icon{
+    display: flex;
+}
+.reaction-icon img:nth-child(1){
+    width: 19px;
+    height: 16px;
+    margin: 26.5px 0px 0px 20.5px;
+}
+.reaction-icon img:nth-child(2){
+    width: 18px;
+    height: 18px;
+    margin: 24.5px 0px 0px 13px;
+}
+.rollover .rollover-slogan{
+    margin: 20.5px 0px 0px 20.5px;
+    font-size: 13px;
+}
+.rollover .filter{
+    margin: 23.5px 0px 0px 20.5px;
+    padding-top: 23.5px;
+    border-top: 1px solid #707070;
+    width: 290px;
+}
+.filter{
+    display: flex;
+    justify-content: space-between;
+}
+.filter .color{
+    font-size: 12px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.color-box{
+    display: flex;
+    gap: 4.5px;
+    margin-top: 14.5px;
+}
+.color-box div{
+    width: 16px;
+    height: 16px;
+    box-shadow: 0px 3px 6px #00000029;
+    border: 1px solid #CFCFCF;
+    border-radius: 5px;
+}
+.color-box div:nth-child(1){
+    background-color: #FFFFFF;
+}
+.color-box div:nth-child(2){
+    background-color: #E3D4A8;
+}
+.color-box div:nth-child(3){
+    background-color: #000000;
+}
+.filter .size{
+    display: flex;
+    margin-top: 14.5px;
 }
