@@ -1,0 +1,273 @@
+*{
+    font-weight: bold;  
+    font-family: 'Segoe UI';
+    }
+body{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    width: 1600px;
+}
+aside{
+    margin-left: 31.5px;
+    margin-top: 20px;
+    width: 242px;
+    height: 100%;
+}
+.redirect-links{
+    list-style-type: none;
+    padding: 0;
+    margin-top: 42px;
+}
+.redirect-links li{
+    margin-bottom: 9px;
+}
+.filter-list{
+    list-style-type: none;
+    padding: 0;
+    margin-top: 45px;
+    font-size: 12px;
+}
+.filter-list li:nth-child(1){
+    margin: 45px 0px 0px 0px;
+}
+.filter-list li .head{
+    /* border-bottom: 1px solid #707070; */
+    padding-bottom: 18.5px;
+    display: flex;
+    justify-content: space-between;
+}
+#sort-by-list{
+    border-top: 1px solid #707070;
+}
+
+#sort-by-list ul{
+    display: block;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+#sort-by-list ul li:nth-child(1){
+    margin-top: 45px;
+}
+#sort-by-list ul li{
+    font-weight: 400;
+    margin-top: 15px;
+}
+
+.filter-list li:nth-child(2) .head{
+    padding-top: 33.5px;
+}
+.filter-list li:nth-child(3) .head{
+    padding-top: 37.5px;
+}
+.filter-list li:nth-child(4) .head{
+    padding-top: 39.5px;
+}
+.filter-list li:nth-child(5) .head{
+    padding-top: 46.5px;
+}
+.filter-list li:nth-child(6) .head{
+    padding-top: 48.75px;
+}
+
+.filter-list li:nth-child(2) div:nth-child(2) div{
+    /* display: flex;
+    justify-content: space-between; */
+    padding-top: 19px;
+    align-items: center;
+}
+#checkboxes{
+    display: block;
+    border-top: 1px solid #707070;
+
+}
+#checkboxes div input{
+    padding: 0px;
+    margin: 0;
+    width: 10px;
+    height: 10px;
+    border-radius: 0;
+}
+#checkboxes div label{
+    margin-left: 13px;
+    font-weight: 400;
+}
+
+#color-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 242px;
+    height: auto;
+    padding-top: 19px;
+    justify-content: center;
+    border-top: 1px solid #707070;
+
+}
+
+#color-container div {
+    box-sizing: border-box; 
+    width: 16px;
+    height: 16px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    cursor: pointer;
+    margin-right: 4px;
+    margin-bottom: 5px;
+}
+
+#color-container div:nth-child(1) { background-color: #FFFFFF; }
+#color-container div:nth-child(2) { background-color: #E3D4A8; }
+#color-container div:nth-child(3) { background-color: #000000; }
+#color-container div:nth-child(4) { background-color: #D92020; }
+#color-container div:nth-child(5) { background-color: #A60AD4; }
+#color-container div:nth-child(6) { background-color: #A8B0E3; }
+#color-container div:nth-child(7) { background-color: #002BB9; }
+#color-container div:nth-child(8) { background-color: #FFBE00; }
+#color-container div:nth-child(9) { background-color: #00F339; }
+#color-container div:nth-child(10) { background-color: #094816; }
+#color-container div:nth-child(11) { background-color: #5D400E; }
+#color-container div:nth-child(12) { background-color: #FF98B4; }
+#color-container div:nth-child(13) { background-color: #F9B700; }
+#color-container div:nth-child(14) { background-color: #21E6E0; }
+#color-container div:nth-child(15) { background-color: #6E140E; }
+#color-container div:nth-child(16) { background-color: #0F3A72; }
+#color-container div:nth-child(17) { background-color: #3F1092; }
+#color-container div:nth-child(18) { background-color: #4D165A; }
+#color-container div:nth-child(19) { background-color: #B51919; }
+#color-container div:nth-child(20) { background-color: #FF4343; }
+#color-container div:nth-child(21) { background-color: #4A4A4A; }
+#color-container div:nth-child(22) { background-color: #D1D1D1; }
+#color-container div:nth-child(23) { background-color: #8D6E32; }
+#color-container div:nth-child(24) { background-color: #AE7400; }
+
+
+#sizeBtn{
+    display: flex;
+    flex-wrap: wrap;
+    width: 243px;
+    border-top: 1px solid #707070;
+    padding-top: 14px;
+}
+#sizeBtn button{
+    width: 119px;
+    height: 33px;
+    background: transparent;
+    border: 1px solid #707070;
+    font-size: 12px;
+    font-weight: 400;
+}
+#sizeBtn button:nth-child(odd){
+    margin: 0px 5px 6px 0px;
+}
+#sizeBtn button:nth-child(even){
+    margin: 0px 0px 6px 0px;
+}
+
+#price-filter {
+    border-top: 1px solid #707070;
+    padding-top: 32px;
+    display: block;
+  }
+  
+  .slider-container {
+    position: relative;
+    height: 30px; /* Adjusted to allow for thumb positioning */
+  }
+  
+  .slider {
+    position: relative;
+    height: 2px;
+    background: #e0e0e0;
+    border-radius: 3px;
+    top: 50%; /* Center the slider vertically */
+    transform: translateY(-50%);
+  }
+  
+  .slider .progress {
+    position: absolute;
+    height: 100%;
+    background: #000;
+    border-radius: 3px;
+  }
+  
+  input[type="range"] {
+    position: absolute;
+    width: 100%;
+    height: 30px; /* Ensures enough space for thumbs */
+    top: 0;
+    left: 0;
+    background: none;
+    pointer-events: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+  }
+  
+  input[type="range"]::-webkit-slider-thumb {
+    height: 8px;
+    width: 8px;
+    background-color: #FFFFFF;
+    border: 1px solid #000;
+    border-radius: 50%;
+    pointer-events: auto;
+    -webkit-appearance: none;
+    cursor: pointer;
+    position: relative;
+    top: -2px; /* Centers the thumb in the middle of the slider */
+  }
+  
+  input[type="range"]::-moz-range-thumb {
+    height: 8px;
+    width: 8px;
+    background-color: #FFFFFF;
+    border: 1px solid #000;
+    border-radius: 50%;
+    pointer-events: auto;
+    cursor: pointer;
+    position: relative;
+    top: -2px; /* Centers the thumb in the middle of the slider */
+  }
+  
+  .price-input {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .price-input input {
+    font-size: 12px;
+    text-align: center;
+    outline: none;
+    border: none;
+  }
+
+  #material-filter{
+    border-top: 1px solid #707070;
+    padding-top: 18.5px;
+    display: block;
+  }
+  #material-filter div:nth-child(n+2){
+    padding-top: 12px;
+    align-items: center;
+}
+  #material-filter div input{
+    padding: 0px;
+    margin: 0;
+    width: 10px;
+    height: 10px;
+    border-radius: 0;
+}
+#material-filter div label{
+    margin-left: 13px;
+    font-weight: 400;
+}
+  
+.content{
+    width: 1326.5px;
+    margin-top: 20px;
+}
+
+.content img:nth-child(1){
+    width: 1146px;
+    height: 234px;
+    margin: 0px 0px 0px 29.5px;
+}

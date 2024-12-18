@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../listing-page/listing.css">
+    <title>Listing</title>
+</head>
+<body>
+    
+    <aside>
+        <ul class="redirect-links">
+            <li>Back to Women</li>
+            <li>Back to clothing</li>
+            <li>Back to jacket </li>
+        </ul>
+
+        <ul class="filter-list">
+            <li>
+                <div class="head">
+                    Sort By 
+                    <img src="listing-images/Icon ionic-ios-arrow-down.svg" alt="arrow" id="sort-by-arrow" onclick="toggleListItems()">
+                </div>
+                <div id="sort-by-list">
+                    <ul>
+                        <li>Down jackets (263)</li>
+                        <li>Quilted jackets (567)</li>
+                        <li>Pea coats and woolen jackets (114)</li>
+                        <li>Parkas (145)</li>
+                        <li>Between-seasons jackets (544)</li>
+                        <li>Fur jackets (78)</li>
+                        <li>Leather jackets (255)</li>
+                        <li>Overshirts (229)</li>
+                        <li>Field jackets (40)</li>
+                        <li>Blousons (159)</li>
+                        <li>rain jackets (64)</li>
+                        <li>Denim jackets (143)</li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <div class="head">
+                    Brand 
+                    <img src="listing-images/Icon ionic-ios-arrow-down.svg" alt="arrow" id="brands-arrow" onclick="togglebrandItems()">
+                </div>
+                <div id="checkboxes">
+                    <div>
+                        <input type="checkbox" name="brand1" id="brand1" value="brand1">
+                        <label for="brand1">MARCCAIN</label>
+                    </div>
+                    
+                    <div>
+                        <input type="checkbox" name="brand2" id="brand2" value="brand2">
+                        <label for="brand2">JOOP</label>
+                    </div>
+                    
+                    <div>
+                        <input type="checkbox" name="brand2" id="brand3" value="brand2">
+                        <label for="brand2">DRYKORN</label>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="head">
+                    Colors
+                    <img src="listing-images/Icon ionic-ios-arrow-down.svg" alt="arrow" id="colors-arrow" onclick="toggleColorItems()">
+                </div>
+                  <div id="color-container">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+            
+                </div>
+            </li>
+            <li>
+                <div class="head">
+                    Size
+                    <img src="listing-images/Icon ionic-ios-arrow-down.svg" alt="arrow" id="size-arrow" onclick="toggleSizeItems()">    
+                </div>
+
+                <div id="sizeBtn">
+                    <button>32</button>
+                    <button>34</button>
+                    <button>36</button>
+                    <button>38</button>
+                    <button>40</button>
+                    <button>One size</button>
+                </div>
+            </li>
+            <li>
+                <div class="head">
+                    Price
+                    <img src="listing-images/Icon ionic-ios-arrow-down.svg" alt="arrow" id="price-arrow" onclick="togglePriceItems()">
+                </div>
+                <div id="price-filter">
+                    <div class="slider-container">
+                      <div class="slider">
+                        <div class="progress"></div>
+                      </div>
+                      <input type="range" class="range-min" min="0" max="2000" value="500" step="50">
+                      <input type="range" class="range-max" min="0" max="2000" value="1500" step="50">
+                    </div>
+                    <div class="price-input">
+                      <input type="number" class="input-min" min="0" max="2000" value="500" step="50">
+                      <input type="number" class="input-max" min="0" max="2000" value="1500" step="50">
+                    </div>
+                </div>                  
+            </li>
+            <li>
+                <div class="head">
+                    Material 
+                    <img src="listing-images/Icon ionic-ios-arrow-down.svg" alt="arrow" id="material-arrow" onclick="toggleMaterialItems()">
+                </div>
+                <div id="material-filter">
+                    <div>
+                        <input type="checkbox" name="cotton" id="cotton" value="cotton">
+                        <label for="cotton">100% cotton</label>
+                    </div>
+                    
+                    <div>
+                        <input type="checkbox" name="cashmere" id="cashmere" value="cashmere">
+                        <label for="cashmere">Cashmere</label>
+                    </div>
+                    
+                    <div>
+                        <input type="checkbox" name="nylon" id="nylon" value="nylon">
+                        <label for="nylon">Nylon</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="Knit" id="Knit" value="Knit">
+                        <label for="Knit">Knit</label>
+                    </div>
+                    
+                    <div>
+                        <input type="checkbox" name="velvet" id="velvet" value="velvet">
+                        <label for="velvet">Velvet</label>
+                    </div>
+                    
+                    <div>
+                        <input type="checkbox" name="tule" id="tule" value="tule">
+                        <label for="tule">Tule</label>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </aside>
+
+    <div class="content">
+        <img src="listing-images/listing-first-pic.png" alt="listing-first-pic" >
+    </div>
+
+
+
+</body>
+
+<script src="listing.js"></script>
+</html>
