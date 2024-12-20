@@ -10,9 +10,9 @@
     
     <aside>
         <ul class="redirect-links">
-            <li>Back to Women</li>
-            <li>Back to clothing</li>
-            <li>Back to jacket </li>
+            <li><img src="listing-images/arrow-back.svg" alt="">Back to Women</li>
+            <li><img src="listing-images/arrow-back.svg" alt="">Back to clothing</li>
+            <li><img src="listing-images/arrow-back.svg" alt="">Back to jackets</li>
         </ul>
 
         <ul class="filter-list">
@@ -45,18 +45,18 @@
                 </div>
                 <div id="checkboxes">
                     <div>
-                        <input type="checkbox" name="brand1" id="brand1" value="brand1">
+                        <input type="checkbox" name="brand1" id="brand1" value="brand1" onchange="toggleLabelBold(this)">
                         <label for="brand1">MARCCAIN</label>
                     </div>
                     
                     <div>
-                        <input type="checkbox" name="brand2" id="brand2" value="brand2">
+                        <input type="checkbox" name="brand2" id="brand2" value="brand2" onchange="toggleLabelBold(this)">
                         <label for="brand2">JOOP</label>
                     </div>
                     
                     <div>
-                        <input type="checkbox" name="brand2" id="brand3" value="brand2">
-                        <label for="brand2">DRYKORN</label>
+                        <input type="checkbox" name="brand3" id="brand3" value="brand3" onchange="toggleLabelBold(this)">
+                        <label for="brand3">DRYKORN</label>
                     </div>
                 </div>
             </li>
@@ -195,63 +195,90 @@
                         </div>
                         <div class="filter">
                             <div class="color">
-                                <div>Color</div>
+                                <div>COLOR</div>
                                 <div class="color-box">
-                                    <div class="rollover-color"></div>
-                                    <div class="rollover-color"></div>
-                                    <div class="rollover-color"></div>
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                </div>
+                            </div>
+                            <div class="size">
+                                <div>SIZE</div>
+                                <div class="size-box">
+                                    <button>34</button>
+                                    <button>36</button>
+                                    <button>38</button>
+                                    <button>40</button>
+                                    <button>42</button>
+                                    <button>46</button>
+                                    <button>48</button>
                                 </div>
                             </div>
                         </div>
+                        
+                        <div style="display: flex;">
+                            <div class="cart-container">
+                            <button class="cart-button" onclick="changeQuantity(-1)">-</button>
+                            <span id="cartQuantity">1</span>
+                            <button class="cart-button" onclick="changeQuantity(1)">+</button>
+                            <button>
+                              <img src="listing-images/noun-bag-1665853 (1).svg" alt="Cart" />
+                            </button>
+                        </div>
+                        <div class="add-to-cart">
+                            <button>+</button>
+                        </div>
+                        </div>
+                     
                 </div>
             </div>
 
             <div class="card-item">
                 <div class="tag">SALE</div>
                 <img src="../images/swiper-pic2.png" alt="no image" class="card-image">
-                <div class="slogan">MARC KAIN <br>BLAZER IN NEW WOOL BLEND</div>
+                <div class="slogan">MARC KAIN <br>CAPE WITH PADDED HOOD</div>
                 <div style="display: flex; gap: 13px;"><span  class="USD" style="text-decoration: line-through;">510 USD</span><span class="USD">310 USD</span></div>
             </div>
 
             <div class="card-item">
                 <img src="../images/swiper-pic2.png" alt="no image" class="card-image">
-                <div class="slogan">MARC KAIN <br>BLAZER IN NEW WOOL BLEND</div>
+                <div class="slogan">MARC KAIN <br>NEW WOOL JACKET "KNITTED IN GERMANY"</div>
                 <div class="USD">510 USD</div>
             </div>
 
             <div class="card-item">
                 <img src="../images/swiper-pic1.png" alt="no image" class="card-image">
-                <div class="slogan">MARC KAIN <br>BLAZER IN NEW WOOL BLEND</div>
+                <div class="slogan">MARC KAIN <br>BLAZER</div>
                 <div class="USD">510 USD</div>
             </div>
             <div class="card-item">
                 <img src="../images/swiper-pic1.png" alt="no image" class="card-image">
-                <div class="slogan">MARC KAIN <br>BLAZER IN NEW WOOL BLEND</div>
+                <div class="slogan">MARC KAIN <br>BLAZER</div>
                 <div class="USD">510 USD</div>
             </div>
 
             <div class="card-item">
                 <div class="tag">NEW</div>
                 <img src="../images/swiper-pic1.png" alt="no image" class="card-image">
-                <div class="slogan">MARC KAIN <br>BLAZER IN NEW WOOL BLEND</div>
+                <div class="slogan">MARC KAIN <br>LONG WAISCOAT</div>
                 <div class="USD">510 USD</div>
             </div>
 
             <div class="card-item">
                 <img src="../images/swiper-pic1.png" alt="no image" class="card-image">
-                <div class="slogan">MARC KAIN <br>BLAZER IN NEW WOOL BLEND</div>
+                <div class="slogan">MARC KAIN <br>FLOWING BLAZER</div>
                 <div class="USD">510 USD</div>
             </div>
 
             <div class="card-item">
                 <img src="../images/swiper-pic1.png" alt="no image" class="card-image">
-                <div class="slogan">MARC KAIN <br>BLAZER IN NEW WOOL BLEND</div>
+                <div class="slogan">MARC KAIN <br>"RETHINK TOGETHER"JACKET</div>
                 <div class="USD">510 USD</div>
             </div>
 
             <div class="card-item">
                 <img src="../images/swiper-pic1.png" alt="no image" class="card-image">
-                <div class="slogan">MARC KAIN <br>BLAZER IN NEW WOOL BLEND</div>
+                <div class="slogan">MARC KAIN <br>QUILTED VEST</div>
                 <div class="USD">510 USD</div>
             </div>
 

@@ -141,3 +141,37 @@ function toggleMaterialItems() {
         materialFilter.style.display = 'none'; // Hide the list
     }
 }
+
+function changeQuantity(amount) {
+    const quantityElement = document.getElementById("cartQuantity");
+    let currentQuantity = parseInt(quantityElement.innerText);
+  
+    // Adjust quantity but prevent it from going below 1
+    currentQuantity += amount;
+    if (currentQuantity < 1) {
+      currentQuantity = 1;
+    }
+  
+    quantityElement.innerText = currentQuantity;
+  }
+
+
+  function toggleLabelBold(checkbox) {
+    const label = document.querySelector(`label[for="${checkbox.id}"]`);
+    
+    // Debugging: Log the found label
+    console.log(label);
+    
+    if (label) {
+      if (checkbox.checked) {
+        label.classList.add("bold"); // Add the "bold" class
+      } else {
+        label.classList.remove("bold"); // Remove the "bold" class
+      }
+    } else {
+      console.error(`Label for checkbox with id "${checkbox.id}" not found.`);
+    }
+  }
+  
+  
+  
