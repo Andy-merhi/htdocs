@@ -171,7 +171,25 @@ function changeQuantity(amount) {
     } else {
       console.error(`Label for checkbox with id "${checkbox.id}" not found.`);
     }
-  }
+}
+
+function appendFilter() {
+  const aside = document.getElementById("aside");
+  const content = document.getElementById("content");
+
+    aside.style.display = "block";
+    content.style.display = "none";
+ 
+}
+function appendContent() {
+  const aside = document.getElementById("aside");
+  const content = document.getElementById("content");
+
+    aside.style.display = "none";
+    content.style.display = "block";
+ 
+}
+
   
   
   

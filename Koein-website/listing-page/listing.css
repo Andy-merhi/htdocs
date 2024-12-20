@@ -16,11 +16,12 @@ body{
     font-size: 13px;
     margin-top: 13px;
 }
-aside{
+#aside{
     margin-left: 31.5px;
     margin-top: 20px;
     width: 242px;
     height: 100%;
+    display: block;
 }
 .redirect-links{
     list-style-type: none;
@@ -29,6 +30,7 @@ aside{
 }
 .redirect-links img{
     margin-right: 11.48px;
+    /* transform: matrix(0, 1, -1, 0, 0, 0); */
 }
 .redirect-links li{
     margin-bottom: 9px;
@@ -39,9 +41,6 @@ aside{
     margin-top: 45px;
     font-size: 12px;
     width: 242px;
-}
-.filter-list li:nth-child(1){
-    margin: 45px 0px 0px 0px;
 }
 .filter-list li .head{
     padding-bottom: 18.5px;
@@ -86,7 +85,6 @@ aside{
     /* display: flex;
     justify-content: space-between; */
     padding-top: 19px;
-    align-items: center;
 }
 #checkboxes{
     display: block;
@@ -196,7 +194,7 @@ aside{
   .slider {
     position: relative;
     height: 2px;
-    background: #e0e0e0;
+    background: #000;
     border-radius: 3px;
     top: 50%; /* Center the slider vertically */
     transform: translateY(-50%);
@@ -212,13 +210,13 @@ aside{
   input[type="range"] {
     position: absolute;
     width: 100%;
-    height: 2px; /* Ensures enough space for thumbs */
+    height: 2px;
     top: 50%;
     left: 0;
     background: none;
     pointer-events: none;
     -webkit-appearance: none;
-    -moz-appearance: none;
+    /* -moz-appearance: none; */
   }
   
   input[type="range"]::-webkit-slider-thumb {
@@ -234,7 +232,7 @@ aside{
     top: -2px; /* Centers the thumb in the middle of the slider */
   }
   
-  input[type="range"]::-moz-range-thumb {
+  /* input[type="range"]::-moz-range-thumb {
     height: 8px;
     width: 8px;
     background-color: #FFFFFF;
@@ -243,8 +241,8 @@ aside{
     pointer-events: auto;
     cursor: pointer;
     position: relative;
-    top: -2px; /* Centers the thumb in the middle of the slider */
-  }
+    top: -2px; Centers the thumb in the middle of the slider 
+    } */
   
   .price-input {
     display: flex;
@@ -264,7 +262,7 @@ aside{
     display: block;
   }
   #material-filter div:nth-child(n+2){
-    padding-top: 12px;
+    padding-top: 13px;
     align-items: center;
 }
   #material-filter div input{
@@ -279,10 +277,13 @@ aside{
     font-weight: 400;
 }
   
-.content{
+#content{
     margin: 20px 0px 0px 29.5px;
+    display: block;
 }
-
+.redirect-links-mobile{
+    display: none;
+}
 .first-div{
     position: relative;
     width: 1146px;
@@ -479,4 +480,194 @@ aside{
 .cards .card-item:hover .rollover{
     display: block;
     transition: all 0.7s ease-in-out;
+}
+
+.cards .hidden{
+    display: none;
+}
+
+.card-item .filter-icon{
+    z-index: 10000;
+    position: absolute;
+    right: 0;
+    display: none;
+}
+.card-item .filter-icon img{
+    width: 39px;
+    height: 39px;
+}
+.title{
+    display: none;
+}
+.apply-filter{
+    display: none;
+}
+@media(max-width: 394px){
+
+    .USD{
+        font-size: 12px;
+        font-weight:bold;
+        margin-top: 10px;
+    }
+    .slogan{
+        font-size: 12px;
+        margin-top: 15.27px;
+    }
+    #content{
+        margin: 0px 0px 0px 19px;
+        display: block;
+    }
+    .redirect-links-mobile{
+        display: block;
+        margin-top: 13px;
+        padding: 0;
+    }
+    .redirect-links-mobile ul{
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+    .redirect-links-mobile ul li{
+        margin-bottom: 9px;
+        font-size: 12px;
+    }
+    .redirect-links-mobile img{
+        margin-right: 11.48px;
+    }
+
+    .first-div{
+        width: 355px;
+        height: 121px;
+    }
+    .first-div img:nth-child(1){
+        width: 355px;
+        height: 121px;
+    }
+    .first-div div:nth-child(2){    
+        font-size: 30px;
+        margin: 41px 0px 0px 22px;
+    }
+
+    .second-div img:nth-child(1){
+        width: 113px;
+        height: 62px;
+        margin-top: 36px;
+    }
+    .second-div img:nth-child(2){
+        width: 78px;
+        height: 78px;
+        margin: 28px 0px 0px 26px;
+    }
+    .second-div img:nth-child(3){
+        width: 84px;
+        height: 29px;
+        margin: 53px 0px 0px 37px;
+    }
+    
+    .cards{
+        margin-top: 27.73px;
+    }
+    .cards .card-item{
+        margin-bottom: 47px;
+        margin-right: 5px;
+    }
+    
+    .cards img{
+        width: 174px;
+        height: 272px;
+    }
+    .card-item .tag{
+      display: none;
+    }
+    .cards .hidden{
+        display: block;
+    }
+    .cards .card-item:hover .rollover{
+        display: none
+    }
+    .card-item .filter-icon{
+        display: block;
+    }
+
+
+    #aside{
+        display: none;
+        margin-left: 19px;
+        margin-top: 0px;
+        width: 393px;
+        height: 100%;
+        z-index: 10000000;
+    }
+    .redirect-links{
+        display: none;
+    }
+
+    .filter-list{
+        width: 355px;
+    }
+   
+    #sort-by-list ul li{
+        margin-top: 13px;
+    }
+    .filter-list li:nth-child(2) div:nth-child(2) div{
+        /* display: flex;
+        justify-content: space-between; */
+        padding-top: 13px;
+    }
+    #color-container {
+        width: 355px;
+    }
+    #color-container div {
+        margin-right: 14px;
+    }
+    #color-container div:nth-child(12) {
+        margin-right: 0px;
+    }
+    #color-container div:nth-child(24) {
+        margin-right: 0px;
+    }
+
+    #sizeBtn{
+        width: 355px;
+    }
+    #sizeBtn button{
+        width: 174px;
+        height: 33px;
+    }
+    #sizeBtn button:hover{
+        background-color: #FFFFFF; /* Change background color during click */
+        color: #000;/* Change text color during click */
+        transform: scale(1);/* Add a slight scale effect */
+      }
+
+    .title{
+        display: flex;
+        top: 0;
+        margin-left: -19px;
+        background-color: #F1F1F1;
+        width: 394px;
+        height: 50px;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .title div{
+        margin-left: 19px;
+    }
+    .title button{
+        margin-right: 19px;
+        background: transparent;
+        border: none;
+    }
+
+    .apply-filter{
+        display: block;
+        margin: 64px 0px 19px 0px;
+    }
+    .apply-filter button{
+        background: transparent;
+        width: 355px;
+        height: 60px;
+        font-size: 14px; 
+        padding: 21px 125px 20px 126px;
+    }
 }

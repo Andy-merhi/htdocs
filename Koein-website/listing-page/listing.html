@@ -8,12 +8,16 @@
 </head>
 <body>
     
-    <aside>
+    <aside id="aside">
         <ul class="redirect-links">
             <li><img src="listing-images/arrow-back.svg" alt="">Back to Women</li>
             <li><img src="listing-images/arrow-back.svg" alt="">Back to clothing</li>
             <li><img src="listing-images/arrow-back.svg" alt="">Back to jackets</li>
         </ul>
+
+        <div class="title">
+            <div>FILTERS</div><button onclick="appendContent()">X</button>
+        </div>
 
         <ul class="filter-list">
             <li>
@@ -164,9 +168,21 @@
                 </div>
             </li>
         </ul>
+
+        <div class="apply-filter" id="apply-filter">    
+            <button>APPLY FILTERS</button>
+        </div>
     </aside>
 
-    <div class="content">
+    <div class="content" id="content">
+        <div class="redirect-links-mobile">
+            <ul class="redirect-links-mobile">
+                <li><img src="listing-images/arrow-back.svg" alt="">Back to Women</li>
+                <li><img src="listing-images/arrow-back.svg" alt="">Back to clothing</li>
+                <li><img src="listing-images/arrow-back.svg" alt="">Back to jackets</li>
+            </ul>
+        </div>
+        
         <div class="first-div">
             <img src="listing-images/listing-first-pic.png" alt="listing-first-pic" >
             <div>Women's Jackets</div>
@@ -238,11 +254,16 @@
                 <img src="../images/swiper-pic2.png" alt="no image" class="card-image">
                 <div class="slogan">MARC KAIN <br>CAPE WITH PADDED HOOD</div>
                 <div style="display: flex; gap: 13px;"><span  class="USD" style="text-decoration: line-through;">510 USD</span><span class="USD">310 USD</span></div>
+                <div class="filter-icon" onclick="appendFilter()">
+                    <img src="listing-images/filter-icon.svg" alt="filter">
+                </div>
+    
             </div>
 
+            
             <div class="card-item">
                 <img src="../images/swiper-pic2.png" alt="no image" class="card-image">
-                <div class="slogan">MARC KAIN <br>NEW WOOL JACKET "KNITTED IN GERMANY"</div>
+                <div class="slogan">MARC KAIN <br>NEW WOOL JACKET</div>
                 <div class="USD">510 USD</div>
             </div>
 
@@ -251,6 +272,7 @@
                 <div class="slogan">MARC KAIN <br>BLAZER</div>
                 <div class="USD">510 USD</div>
             </div>
+
             <div class="card-item">
                 <img src="../images/swiper-pic1.png" alt="no image" class="card-image">
                 <div class="slogan">MARC KAIN <br>BLAZER</div>
@@ -282,10 +304,25 @@
                 <div class="USD">510 USD</div>
             </div>
 
+            <div class="card-item hidden">
+                <img src="../images/swiper-pic1.png" alt="no image" class="card-image">
+                <div class="slogan">MARC KAIN <br>"RETHINK TOGETHER" <br>SHOULDER BAG</div>
+                <div class="USD">510 USD</div>
+            </div>
+
+            <div class="card-item hidden">
+                <img src="../images/swiper-pic1.png" alt="no image" class="card-image">
+                <div class="slogan">MARC KAIN <br>"RETHINK TOGETHER" <br>SHOULDER BAG</div>
+                <div class="USD">510 USD</div>
+            </div>
+
+            <div class="card-item hidden">
+                <img src="../images/swiper-pic1.png" alt="no image" class="card-image">
+                <div class="slogan">MARC KAIN <br>"RETHINK TOGETHER" <br>SHOULDER BAG</div>
+                <div class="USD">510 USD</div>
+            </div>
+
         </div>
-
-
-
     </div>
 
 
