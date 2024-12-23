@@ -4,23 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="home.css">
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"> -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.min.js"></script>
+
     <title>Home</title>
 </head>
 <body>
 
-    <div class="sign-in-container">
+    <div class="sign-in-container" id="sign-in-container">
         <!-- Left Section: Sign In -->
         <div class="left-section">
           <h1>Sign in</h1>
-          <form>
+          <button class="reponsive-close-btn" onclick="closeSignInContainer()">✖</button>
+          <form id="loginForm">
             <label for="email">Email</label>
-            <input type="email" id="sind-in-email" required>
+            <input type="email" name="email" id="sind-in-email" required>
     
             <label for="password">Password</label>
             <div class="password-container">
-              <input type="password" id="password" required>
+              <input type="password" name="password" id="password" required>
             </div>
     
             <a href="#" class="forgot-password">Forgot your password?</a>
@@ -38,7 +41,7 @@
     
         <!-- Right Section: Create Account / Checkout -->
         <div class="right-section">
-          <button class="close-btn">✖</button>
+          <button class="close-btn" onclick="closeSignInContainer()">✖</button>
           <div class="create-account">
             <h2>Create an account</h2>
             <button class="sign-up-btn">SIGN UP</button>
@@ -54,7 +57,76 @@
             </form>
           </div>
         </div>
-      </div>
+    </div>
+
+
+
+    <div class="form-container">
+        <div class="form-header">
+            <h1>Create an account</h1>
+            <button class="close-btn">✕</button>
+        </div>
+        <form id="registration-form" novalidate>
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="first-name">First name</label>
+                    <input type="text" id="first-name" name="first-name" required>
+                </div>
+                <div class="form-group">
+                    <label for="last-name">Last name</label>
+                    <input type="text" id="last-name" name="last-name" required>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="phone-number">Phone number</label>
+                    <input type="tel" id="phone-number" name="phone-number" required>
+                    <button type="button" class="verify-btn">Verify</button>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <label>Enter the code sent to you by SMS</label>
+                <div class="otp-container">
+                    <input type="text" class="otp-input" maxlength="1" required>
+                    <input type="text" class="otp-input" maxlength="1" required>
+                    <input type="text" class="otp-input" maxlength="1" required>
+                    <input type="text" class="otp-input" maxlength="1" required>
+                    <span class="timer">00:56</span>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <div class="form-group">
+                    <label for="confirm-password">Confirm password</label>
+                    <input type="password" id="confirm-password" name="confirm-password" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <input type="checkbox" id="updates" name="updates">
+                <label for="updates">I would like to receive product updates, news, and promotional emails from AL BON</label>
+            </div>
+            <div class="form-group">
+                <input type="checkbox" id="terms" name="terms" required>
+                <label for="terms">By signing up, you agree to our <a href="#">Terms & Conditions</a></label>
+            </div>
+            <button type="submit" class="submit-btn">Sign Up</button>
+        </form>
+    </div>
+
+
+
+
+
+
+
+
     
 
     <div class="head">
@@ -299,8 +371,8 @@
                         <div>Total</div>
                         <div>1200 USD</div>
                     </div>
-                    <button class="checkout">
-                        checkout
+                    <button class="checkout" id="checkout" onclick="toggleSignInContainer()">
+                        CHECKOUT
                     </button>
                 </div>
             </li>
@@ -788,6 +860,7 @@
         </div>
      </div>
 </footer>
+
 
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="home.js"></script>

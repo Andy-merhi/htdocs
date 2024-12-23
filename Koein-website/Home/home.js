@@ -85,3 +85,44 @@
           menuBurgerIcon.style.zIndex = '1100';
       }
   }
+
+  function toggleSignInContainer() {
+    var signInContainer = document.getElementById('sign-in-container');
+    if (signInContainer.style.display === 'none' || signInContainer.style.display === '') {
+      signInContainer.style.display = 'flex';
+    }
+  }
+
+  function closeSignInContainer() {
+    var closeSignIn = document.getElementById('sign-in-container');
+    if (closeSignIn.style.display === 'flex') {
+      closeSignIn.style.display = 'none';
+    }
+  }
+
+  $(document).ready(function () {
+    $("#loginForm").validate({
+      rules: {
+        email: {
+          required: true,
+          email: true,
+        },
+        password: {
+          required: true,
+          minlength: 6
+        }
+      },
+      messages: {
+        email: {
+          required: "Please enter your email",
+          email: "Please enter a valid email address"
+        },
+        password: {
+          required: "Please provide a password",
+          minlength: "Your password must be at least 6 characters long"
+        }
+      }
+    });
+  });
+  
+  
