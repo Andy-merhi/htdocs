@@ -125,4 +125,38 @@
     });
   });
   
-  
+
+
+
+    const phoneInput = document.querySelector('#phone-number');
+    const iti = window.intlTelInput(phoneInput, {
+        initialCountry: 'lb', // Default to Lebanon
+        separateDialCode: true,
+    });
+
+    // OTP Timer Logic
+    const timerElement = document.getElementById('otp-timer');
+    let timeRemaining = 56;
+
+    function startOtpTimer() {
+        const timerInterval = setInterval(() => {
+            if (timeRemaining > 0) {
+                const minutes = Math.floor(timeRemaining / 60);
+                const seconds = timeRemaining % 60;
+                timerElement.textContent = `${minutes}:${seconds.toString().padStart(2, '0')}`;
+                timeRemaining--;
+            } else {
+                clearInterval(timerInterval);
+                timerElement.textContent = "Expired";
+            }
+        }, 1000);
+    }
+
+    startOtpTimer();
+
+    function toggleSignUpContainer() {
+      var signUpContainer = document.getElementById('registration-form');
+      if (signUpContainer.style.display === 'none' || signUpContainer.style.display === '') {
+        signUpContainer.style.display = 'bloc';
+      }
+    }
