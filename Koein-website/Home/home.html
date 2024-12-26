@@ -63,66 +63,66 @@
 
 
 
-    <div class="form-container" id="registration-form">
-        <div class="form-header">
-            <h1>Create an account</h1>
-            <button class="close-btn">✕</button>
-        </div>
-        <form  novalidate>
-            <div class="form-row">
-                <div class="form-group">
-                    <label for="first-name">First name</label>
-                    <input type="text" id="first-name" name="first-name" required>
-                </div>
-                <div class="form-group">
-                    <label for="last-name">Last name</label>
-                    <input type="text" id="last-name" name="last-name" required>
-                </div>
+        <div class="form-container" id="registration-form">
+            <div class="form-header">
+                <h1>Create an account</h1>
+                <button class="close-btn" onclick="closeSignUpContainer()">✕</button>
             </div>
-            <div class="form-row">
-                <div class="form-group phone-group">
-                    <label for="phone-number">Phone number</label>
-                    <div class="phone-input-wrapper">
-                        <input type="tel" id="phone-number" name="phone-number" required>
-                        <button type="button" class="verify-btn">Verify</button>
+            <form class="rows" id="sign-up-form">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="first-name">First name</label>
+                        <input type="text" id="first-name" name="first-name" required>
                     </div>
-                </div>                
-                <div class="form-group">
-                    <label for="email">Email</label>
-                    <input type="email" id="sign-up-email" name="sign-up-email" required>
+                    <div class="form-group">
+                        <label for="last-name">Last name</label>
+                        <input type="text" id="last-name" name="last-name" required>
+                    </div>
                 </div>
-            </div>
-            <div class="form-group">
-                <label class="enter-code">Enter the code sent to you by SMS</label>
-                <div class="otp-container">
-                    <input type="text" class="otp-input" maxlength="1" required>
-                    <input type="text" class="otp-input" maxlength="1" required>
-                    <input type="text" class="otp-input" maxlength="1" required>
-                    <input type="text" class="otp-input" maxlength="1" required>
-                    <span id="otp-timer" class="timer">00:56</span>
+                <div class="form-row">
+                    <div class="form-group phone-group">
+                        <label for="phone-number">Phone number</label>
+                        <div class="phone-input-wrapper">
+                            <input type="tel" id="phone-number" name="phone-number" required>
+                            <button type="button" class="verify-btn">Verify</button>
+                        </div>
+                    </div>                
+                    <div class="form-group email-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="sign-up-email" name="sign-up-email" required>
+                    </div>
                 </div>
-            </div>
-            <div class="form-row">
-                <div class="form-group">
-                    <label for="password">Password</label>
-                    <input type="password" id="sign-up-password" name="sign-up-password" required>
+                <div class="form-group otp-group">
+                    <label class="enter-code">Enter the code sent to you by SMS</label>
+                    <div class="otp-container">
+                        <input type="text" class="otp-input" name="otp-input" maxlength="1" required>
+                        <input type="text" class="otp-input" name="otp-input" maxlength="1" required>
+                        <input type="text" class="otp-input" name="otp-input" maxlength="1" required>
+                        <input type="text" class="otp-input" name="otp-input" maxlength="1" required>
+                        <span id="otp-timer" class="timer">00:56</span>
+                    </div>
                 </div>
-                <div class="form-group">
-                    <label for="confirm-password">Confirm password</label>
-                    <input type="password" id="sign-up-confirm-password" name="sign-up-confirm-password" required>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" id="sign-up-password" name="sign-up-password" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="confirm-password">Confirm password</label>
+                        <input type="password" id="sign-up-confirm-password" name="sign-up-confirm-password" required>
+                    </div>
                 </div>
-            </div>
-            <div class="form-group checkbox-group">
-                <input type="checkbox" id="updates" name="updates">
-                <label for="updates">I would like to receive product updates, news, and promotional emails from AL BON</label>
-            </div>
-            <div class="form-group checkbox-group">
-                <input type="checkbox" id="terms" name="terms" required>
-                <label for="terms">By signing up, you agree to our <a href="#">Terms & Conditions</a></label>
-            </div>
-            <button type="submit" class="submit-btn">SIGN UP</button>
-        </form>
-    </div>
+                <div class="form-group checkbox-group">
+                    <input type="checkbox" id="updates" name="updates">
+                    <label for="updates">I Would Like To Receive Product Updates, News, And Promotional Emails From AL BON</label>
+                </div>
+                <div class="form-group checkbox-group">
+                    <input type="checkbox" id="terms" name="terms" required>
+                    <label for="terms">By Signing Up, You Agree To Our <a href="#">Terms & Conditions</a></label>
+                </div>
+                <button type="submit" class="submit-btn">SIGN UP</button>
+            </form>
+        </div>
     
 
 

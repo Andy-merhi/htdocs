@@ -92,7 +92,7 @@
         margin:15px 0px 15px 18px; 
         z-index: 1100;
         display: none;
-        position: fixed;
+        position: absolute;
     }
     /* General Menu Burger Styles */
     .menu-burger {
@@ -1369,7 +1369,7 @@ height: 67px;
 
 .left-section input {
     border: none;
-    background-color: #cccc;
+    background-color: #FBFBFB;
     width: 416px;
     height: 59px;
     margin: 6px 0px 0px 101px;
@@ -1486,7 +1486,7 @@ height: 67px;
     width: 416px;
     height: 59px;;
     border: none;
-    background-color: #cccc;
+    background-color: #FBFBFB;
     /* opacity: 0.22; */
     color: #fff;
     font-size: 24px;
@@ -1496,14 +1496,18 @@ height: 67px;
 
 /* Form Container */
 .form-container {
-    display: none;
+    display: none;  
+    position: absolute;
     background-color: #ffffff;
     width: 978px;
     height: 794px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-    padding: 30px 50px;
-    margin: 81px 0px 0px 311px;
-    border-radius: 10px;
+    /* padding: 60px 0px 0px 101px; */
+    margin: 81px 311px;
+    z-index: 99999;
+}
+#registration-form .rows{
+    padding: 42px 102px;
 }
 
 /* Form Header */
@@ -1517,20 +1521,18 @@ height: 67px;
     font-size: 43px;
     font-weight: bold;
     color: #000;
+    margin: 60px 0px 0px 101px;
 }
 
-.close-btn {
+.form-header .close-btn {
     background: none;
     border: none;
-    font-size: 1.5rem;
-    color: #888;
+    font-size: 14px;
+    color: #000;
     cursor: pointer;
-    transition: color 0.3s ease;
+    display: block
 }
 
-.close-btn:hover {
-    color: #000;
-}
 
 /* Form Fields */
 .form-row {
@@ -1601,11 +1603,6 @@ height: 67px;
     background-color: transparent;
     text-decoration: underline;
 }
-
-.verify-btn:hover {
-    background-color: #0056b3;
-}
-
 /* OTP Inputs */
 .otp-container {
     display: flex;
@@ -1620,7 +1617,7 @@ height: 67px;
     width: 35px;
     height: 35px;
     padding: 0;
-    font-size: 1.2rem;
+    font-size: 11px;
     text-align: center;
     border: none;
     border-bottom: 1px solid #707070;
@@ -1628,8 +1625,6 @@ height: 67px;
 }
 
 .otp-input:focus {
-    border-color: #007bff;
-    box-shadow: 0 0 4px rgba(0, 123, 255, 0.3);
     outline: none;
 }
 
@@ -1642,15 +1637,15 @@ height: 67px;
 /* Checkbox and Terms */
 .checkbox-group {
     display: flex;
-    flex-wrap: nowrap;
-    white-space: nowrap;
+    flex-direction: row ;
     margin-top: 22px;
-    font-size: 0.9rem;
+    font-size: 14px;
+    align-items: center;
     width: 100%;    
 }
 
 .checkbox-group input:nth-child(1) {
-    margin: 0;
+    margin-right: 16px;
     width: 10px;
     height: 10px;
     box-sizing: border-box;
@@ -1675,11 +1670,8 @@ height: 67px;
     border: 1px solid #000000;
     font-size: 16px;
     cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.2s ease;
     margin-top: 42px;
 }
-
-
 
 
 
@@ -2515,4 +2507,68 @@ height: 67px;
         .guest-checkout input {
             width: 354px;
         }
-    }
+
+
+                
+        /* Form Container */
+        .form-container {
+            width: 393px;
+            height: auto;
+            margin: 0;
+        }
+        #registration-form .rows{
+            padding: 58px 20.89px;
+            width: auto;
+        }
+        .form-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+        }
+
+        .form-header h1 {
+            font-size: 30px;
+            margin: 27px 0px 0px 19px;
+        }
+       
+
+        /* Form Fields */
+        .form-row {
+            display: flex;
+            flex-wrap: wrap;
+            /* flex-direction: column; */
+            gap: 14px;
+            /* margin-bottom: 20px; */
+        }
+
+        .form-group {
+            /* flex: 0; */
+            display: flex;
+            flex-direction: column;
+        }
+        .enter-code{
+            margin-top: 29.5px;
+        }
+        #registration-form .form-row:nth-child(4){
+            margin-top: 14px;
+        }
+
+        /* Checkbox and Terms */
+        .checkbox-group {
+            margin-top: 42px; 
+            flex-direction: row;
+        }
+
+        /* Submit Button */
+        .submit-btn {
+            width: 156px;
+            height: 51px;
+        }
+        .form-header .close-btn {
+            top: 33px;
+            left: 361px;
+            padding: 0;
+        }
+        
+}

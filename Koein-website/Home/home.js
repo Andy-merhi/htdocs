@@ -73,16 +73,16 @@
     function toggleShoppingCart() {
       // Target the nested UL by its ID
       var menuBurgerIcon = document.getElementById('menu-burger-icon');
-      menuBurgerIcon.style.zIndex = '0';
   
       var shoppingCart = document.getElementById('shopping-cart');
       
       // Toggle the display property
       if (shoppingCart.style.display === 'none' || shoppingCart.style.display === '') {
           shoppingCart.style.display = 'block';
+          menuBurgerIcon.style.display = 'none';
       } else {
           shoppingCart.style.display = 'none';
-          menuBurgerIcon.style.zIndex = '1100';
+          menuBurgerIcon.style.display = 'block';
       }
   }
 
@@ -156,7 +156,167 @@
 
     function toggleSignUpContainer() {
       var signUpContainer = document.getElementById('registration-form');
+      var signInContainer = document.getElementById('sign-in-container');
       if (signUpContainer.style.display === 'none' || signUpContainer.style.display === '') {
-        signUpContainer.style.display = 'bloc';
+        signUpContainer.style.display = 'block';
+        signInContainer.style.display = 'none';
       }
     }
+
+    function closeSignUpContainer() {
+      var closeSignUp = document.getElementById('registration-form');
+      if (closeSignUp.style.display === 'block') {
+        closeSignUp.style.display = 'none';
+      }
+    }
+
+    $(document).ready(function () {
+      // Log when the script starts
+      console.log("jQuery validation script loaded.");
+  
+      // Custom method for phone number validation
+      jQuery.validator.addMethod(
+          "phoneFormat",
+          function (value, element) {
+              console.log("Validating phone number:", value);
+              return this.optional(element) || /^\d{10}$/.test(value);
+          },
+          "Please enter a valid 10-digit phone number."
+      );
+  
+      // Initialize form validation
+      $("#sign-up-form").validate({
+          debug: true, // Prevent actual form submission during testing
+          rules: {
+              "first-name": {
+                  required: true,
+                  minlength: 2,
+              },
+              "last-name": {
+                  required: true,
+                  minlength: 2,
+              },
+              "phone-number": {
+                  required: true,
+                  phoneFormat: true,
+              },
+              "sign-up-email": {
+                  required: true,
+                  email: true,
+              },
+              "sign-up-password": {
+                  required: true,
+                  minlength: 6,
+              },
+              "sign-up-confirm-password": {
+                  required: true,
+                  equalTo: "#sign-up-password",
+              },
+              "otp-input": {
+                  required: true,
+                  minlength: 4,
+                  maxlength: 4,
+              },
+              terms: {
+                  required: true,
+              },
+          },
+          messages: {
+              "first-name": {
+                  required: "First name is required.",
+                  minlength: "First name must be at least 2 characters long.",
+              },
+              "last-name": {
+                  required: "Last name is required.",
+                  minlength: "Last name must be at least 2 characters long.",
+              },
+              "phone-number": {
+                  required: "Phone number is required.",
+              },
+              "sign-up-email": {
+                  required: "Email is required.",
+                  email: "Please enter a valid email address.",
+              },
+              "sign-up-password": {
+                  required: "Password is required.",
+                  minlength: "Password must be at least 6 characters long.",
+              },
+              "sign-up-confirm-password": {
+                  required: "Please confirm your password.",
+                  equalTo: "Passwords do not match.",
+              },
+              terms: {
+                  required: "You must agree to the terms and conditions.",
+              },
+              "otp-input": {
+                  required: "OTP is required.",
+                  minlength: "OTP must be 4 digits.",
+                  maxlength: "OTP must be 4 digits.",
+              },
+          },
+          errorPlacement: function (error, element) {
+              error.css("color", "red"); // Set error message color to red
+              error.insertAfter(element); // Place error message after the input field
+          },
+          highlight: function (element) {
+              $(element).css({
+                  // "border-color": "red", // Highlight input field with red border
+                  // "box-shadow": "0 0 5px rgba(255, 0, 0, 0.5)",
+              });
+          },
+          unhighlight: function (element) {
+              $(element).css({
+                  "border-color": "", // Remove red border
+                  "box-shadow": "",
+              });
+          },
+          submitHandler: function (form) {
+              alert("Form submitted successfully!");
+              console.log("Form validated successfully.");
+              form.submit();
+          },
+      });
+  
+      // Show only the error message for the active field
+      $("input, select").on("focus blur", function () {
+          const inputName = $(this).attr("name");
+          $(".error").each(function () {
+              if ($(this).attr("for") !== inputName) {
+                  $(this).hide(); // Hide other error messages
+              } else {
+                  $(this).show(); // Show the error message for the active input
+              }
+          });
+      });
+  });
+  
+
+
+
+  //   document.addEventListener('DOMContentLoaded', function () {
+  //     const otpGroup = document.querySelector('.otp-group');
+  //     const emailGroup = document.querySelector('.email-group');
+  //     const phoneGroup = document.querySelector('.phone-group');
+  //     const parentContainer = otpGroup.parentElement;
+  
+  //     function reorderElements() {
+  //         if (window.innerWidth <= 394) {
+  //             // Move otp-group before email-group for smaller screens
+  //             if (emailGroup && otpGroup && emailGroup.previousElementSibling !== otpGroup) {
+  //                 parentContainer.insertBefore(otpGroup, emailGroup);
+  //             }
+  //         } else {
+  //             // Restore otp-group to its original position for larger screens
+  //             if (phoneGroup && otpGroup && phoneGroup.nextElementSibling !== otpGroup) {
+  //                 parentContainer.insertBefore(otpGroup, phoneGroup.nextSibling);
+  //             }
+  //         }
+  //     }
+  
+  //     // Reorder on page load
+  //     reorderElements();
+  
+  //     // Reorder on window resize
+  //     window.addEventListener('resize', reorderElements);
+  // });
+  
