@@ -1,0 +1,134 @@
+*{
+    font-weight: bold;  
+    font-family: 'Segoe UI';
+    /* width: 1600px; */
+}
+  
+body{
+    margin: 0px;
+    padding: 0px;
+}
+.about-us div:nth-child(1){
+    margin: 87px 0px 0px 751px;
+    font-size: 23px;
+}
+.about-content img{
+    width: 1298px;
+    height: 376px;
+    margin: 95px 0px 0px 151px;
+}
+.about-content div{
+    text-align: center;
+    font-size: 21px;
+    width: 1062px;
+    height: 124px;
+    margin: 72px 0px 0px 269px;
+}
+.our-brands div:nth-child(1){
+    margin: 126px 0px 0px 740px;
+    font-size: 23px;
+}
+.brands-logo{
+    display: flex;
+    align-items: center;
+    margin: 90px 0px 0px 365px;
+}
+.brands-logo img:nth-child(1){
+    width: 264px;
+    height: 146px;
+}
+.brands-logo img:nth-child(2){
+    width: 182px;
+    height: 182px;
+    margin-left: 98px;
+}
+.brands-logo img:nth-child(3){
+    width: 197px;
+    height: 67px;
+    margin-left: 129px;
+}
+.stores-content{
+    margin: 71px 0px 0px 151px;
+}
+.stores-content img:nth-child(1){
+    width: 1298px;
+    height: 634px;
+    filter: brightness(0.6);
+    position: absolute;
+}
+.stores-content div:nth-child(2){
+    position: absolute;
+    margin: 181px 0px 0px 265px;
+    text-align: center;
+    color: white;
+    font-size: 21px;
+    width: 768px;
+}
+.stores-content button:nth-child(3){
+    position: absolute;
+    margin: 387px 0px 0px 528px;
+    width: 243px;
+    height: 67px;
+    background-color: transparent;
+    border: 1px solid #FFFFFF;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+@media(max-width:394px){
+    .about-us div:nth-child(1){
+        margin: 40px 0px 0px 154px;
+        font-size: 20px;
+    }
+    .about-content img{
+        width: 355px;
+        height: 103px;
+        margin: 13px 0px 0px 19px;
+    }
+    .about-content div{
+        font-size: 14px;
+        width: 330px;
+        height: 163px;
+        margin: 18px 0px 0px 32px;
+    }
+    .our-brands div:nth-child(1){
+        margin: 58px 0px 0px 144px;
+        font-size: 20px;
+    }
+    .brands-logo{
+        margin: 16px 0px 0px 20px;
+    }
+    .brands-logo img:nth-child(1){
+        width: 107px;
+        height: 60px;
+    }
+    .brands-logo img:nth-child(2){
+        width: 74px;
+        height: 74px;
+        margin-left: 40px;
+    }
+    .brands-logo img:nth-child(3){
+        width: 80px;
+        height: 27px;
+        margin-left: 53px;
+    }
+    .stores-content{
+        margin: 68px 0px 0px 19px;
+    }
+    .stores-content img:nth-child(1){
+        width: 355px;
+        height: 208px;
+    }
+    .stores-content div:nth-child(2){
+        margin: 38px 0px 0px 32px;
+        font-size: 14px;
+        width: 292px;
+    }
+    .stores-content button:nth-child(3){
+        margin: 143px 0px 0px 100px;
+        width: 155px;
+        height: 42px;
+        font-size: 14px;
+    }
+}
