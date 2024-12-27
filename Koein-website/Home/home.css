@@ -26,7 +26,7 @@
         position: fixed;
         background-color: #FFFFFF;
         width: 1600px;
-        z-index: 1000;
+        z-index: 100000000;
     }
     .head li{
         cursor: pointer;
@@ -90,7 +90,7 @@
     }
     .menu #menu-burger-icon{
         margin:15px 0px 15px 18px; 
-        z-index: 1100;
+        z-index: 10000;
         display: none;
         position: absolute;
     }
@@ -159,9 +159,8 @@
     }
     .profile-container {
         position: absolute;
-        top: 100%; /* Position below the profile icon */
+        top: 100%;
         left: -20px;
-        display: none; /* Initially hidden */
         width: 216px;
         height: 242px;
         background-color: #fff;
@@ -169,7 +168,10 @@
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         z-index: 9999;
     }
-    
+    #profile-container {
+        display: none;
+    }
+
     .profile-pop-up ul {
         list-style: none;
         margin: 0;
@@ -422,8 +424,11 @@
     }
     .menu .reg-ul li{
         cursor: pointer;
-        display: flex;                 /* Ensures that children are aligned correctly */
+        display: flex;
         align-items: center;  
+    }
+    .menu .reg-ul li div:hover{
+        border-bottom: 2px solid #000000;
     }
     .menu .reg-ul li:nth-child(1){
         margin: 21px 0px 22px 151px;
@@ -438,7 +443,7 @@
         font-size: 14px;
     }
     .menu .reg-ul li:nth-child(3){
-        margin: 21px 0px 22px 31px;
+        padding: 21px 0px 22px 31px;
         width: 57px;
         height: 19px;
         font-size: 14px;
@@ -1291,7 +1296,7 @@ height: 67px;
     border: none;
     outline: none;
     background:transparent;
-    width: 475px;
+    width: 462px;
 }
 .footer-right .input-container span{
     font-size:large;
@@ -1326,7 +1331,7 @@ height: 67px;
     margin: 260px 0px 0px 21px;
     }
     .social-icons div:nth-child(3){
-    margin: 260px 0px 0px 271px;
+    margin: 260px 0px 0px 280px;
     }
 
     /* Container */
@@ -1673,6 +1678,136 @@ height: 67px;
     margin-top: 42px;
 }
 
+
+#overlay{
+    position: absolute;
+    width: 1600px;
+    height: 504px;
+    background: white;
+    top: 0;
+    z-index: 1000;
+    overflow: auto;
+    display: none;
+    transform: translatex(-300px);
+    margin-top: 93px;
+    }
+    .menu .reg-ul li:nth-child(3):hover #overlay{
+        display: block;        
+    }
+    .overlay-head{
+    display: flex;
+    margin-top: 62px;
+    }
+    .overlay-head .div1{
+    font-size: 12px;
+    margin-left: 151px;
+    }
+    .overlay-head .div2{
+    font-size: 12px;
+    margin-left: 391.5px;
+    }
+    .overlay-head .div3{
+    font-size: 12px;
+    margin-left: 164px;
+    }
+    .overlay-body{
+    display: flex; 
+    margin:13.5px 0px 0px 151px;
+    }
+    .overlay-clothing{
+    display: flex; 
+    border-top: 1px solid #707070;
+    }
+    
+    .clothing-div1{
+    width: 122px;
+    }
+    .clothing-div2{
+    margin:0px 0px 0px 114px;
+    width: 148px;
+    }
+    #overlay ul{
+        all: unset;
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+    }
+    #overlay li{
+        all: unset;
+    display: block;
+    font-size: 12px;
+    font-weight: normal;
+    cursor: pointer;
+    margin: 0px;
+    padding: 0px;
+    line-height: 32px;
+    }
+    .clothing-div1 li:nth-child(1){
+    padding-top: 26.5px;
+    }
+    #overlay li:nth-child(1){
+    padding-top: 26.5px;
+    }
+    
+    
+    .top-brands-div{
+    margin:0px 0px 0px 55px;
+    width: 182px;
+    height: 104px;
+    border-top: 1px solid #707070;
+    }
+    .top-brands-div ul{
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+    }
+    .top-brands-div li{
+    font-size: 12px;
+    font-weight: normal ;
+    cursor: pointer;
+    margin: 0px;
+    padding: 0px;
+    line-height: 31px;
+    }
+    .top-brands-div li:nth-child(1){
+    padding-top: 26.5px;
+    }
+    
+    .shop-by-look{
+    margin:0px 0px 0px 45px;
+    width: 182px;
+    height: 104px;
+    border-top: 1px solid #707070;
+    }
+    .shop-by-look ul{
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+    }
+    .shop-by-look li{
+    font-size: 12px;
+    font-weight: normal ;
+    cursor: pointer;
+    margin: 0px;
+    padding: 0px;
+    line-height: 31px;
+    }
+    .shop-by-look li:nth-child(1){
+    padding-top: 26.5px;
+    }
+    .overlay-pic1{
+    margin-left: 44.5px;
+    }
+    .overlay-pic2{
+    margin: 0px 151px 0px 17px;
+    }
+    .overlay-pic1 div, .overlay-pic2 div{
+    font-size: 13px; 
+    margin-top: 10px;
+    }
+    #clothing:hover #overlay, #overlay:hover {
+    display: block;
+    }
 
 
 
@@ -2274,7 +2409,7 @@ height: 67px;
             margin: 28px 0px 0px 19px;
         }
         .footer-right .input-container{
-            margin: 109px 0px 0px 19px;
+            margin: 109px 0px 0px 22px;
             width: 355px;
         }
         .footer-right .input-container input{
@@ -2293,11 +2428,14 @@ height: 67px;
         margin: 208px 0px 0px 40px;
         }
         .social-icons div:nth-child(3){
-        margin: 202px 19.5px 0px 161px;
+        margin: 202px 19.5px auto auto;
         }
 
 
 
+        .menu .reg-ul li:nth-child(7):hover #shopping-cart{
+            display: none;
+        }
         #shopping-cart{
             display: none;
             transform: translateX(-62px);

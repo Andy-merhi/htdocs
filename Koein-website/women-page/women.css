@@ -23,6 +23,7 @@ margin: 14px 0px 13px 111px;
 list-style-type: none;
 margin: 14px 0px 13px 0px;
 margin: 0px;
+width: fit-content;
 }
 .women-nav li{
 display: inline;
@@ -174,12 +175,10 @@ margin-top: 10px;
 #clothing:hover #overlay, #overlay:hover {
 display: block;
 }
-/* When hovering over #clothing, make all other li elements normal weight */
-#clothing:hover ~ li,
-#clothing:hover li:not(#clothing) {
-font-weight: normal;
-}
 
+#list ul:hover li:not(:hover) {
+    font-weight: normal;
+}
 
 
 .first-div{

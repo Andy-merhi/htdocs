@@ -53,8 +53,12 @@
 
     // Function to handle menu-burger click
     document.getElementById('profile-icon').addEventListener('click', function() {
-     
+     if (document.getElementById('profile-container').style.display === 'none' || document.getElementById('profile-container').style.display === '') {
       document.getElementById('profile-container').style.display = 'block';
+     }
+     else {
+      document.getElementById('profile-container').style.display = 'none';
+     }
     });
 
     function changeQuantity(amount) {
@@ -71,16 +75,14 @@
     }
 
     function toggleShoppingCart() {
-      // Target the nested UL by its ID
       var menuBurgerIcon = document.getElementById('menu-burger-icon');
-  
       var shoppingCart = document.getElementById('shopping-cart');
       
       // Toggle the display property
       if (shoppingCart.style.display === 'none' || shoppingCart.style.display === '') {
           shoppingCart.style.display = 'block';
           menuBurgerIcon.style.display = 'none';
-      } else {
+      } else{
           shoppingCart.style.display = 'none';
           menuBurgerIcon.style.display = 'block';
       }
@@ -136,7 +138,7 @@
 
     // OTP Timer Logic
     const timerElement = document.getElementById('otp-timer');
-    let timeRemaining = 56;
+    let timeRemaining = 60;
 
     function startOtpTimer() {
         const timerInterval = setInterval(() => {
